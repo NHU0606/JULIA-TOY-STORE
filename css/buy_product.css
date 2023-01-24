@@ -18,7 +18,9 @@
     margin: 4px 0 0 0;   
     
 }
-
+.header__logo-img{
+    margin-top: 10px;
+}
 .header__navbar-user-menu{
     position: absolute;
     padding-left: 0;    
@@ -301,6 +303,7 @@
 
 .header__notify-footer{
     display: flex;
+    
 }
 
 .header__notify-footer--btn{
@@ -962,7 +965,7 @@
 }
 
 .category-item{
-
+    margin: 5px 0;
 }
 
 .category-item--active{
@@ -1371,6 +1374,7 @@ i.home-product-item__like-icon-fill{
 
 .footer_download-app-img{
     height: 16px;
+    width: auto;
 }
 
 .footer_download-app-link{
@@ -1388,3 +1392,5 @@ i.home-product-item__like-icon-fill{
     font-size: 1.2rem;
     text-align: center;
 }
+
+/* slider  */
