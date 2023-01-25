@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Julia's Toy Store</title>
+    <title>Yeah You Connected with Us</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,12 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="./css/list_product.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="shortcut icon" type="image/png" href="./img/fav1.png">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/list_product.css">
+    <link rel="stylesheet" href="/css/slider_main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/buy_product.css">
+    <link rel="stylesheet" href="/css/connect_ok.css">
+    <link rel="shortcut icon" type="image/png" href="/img/fav1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -25,21 +27,21 @@
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
                             <a href="/index.html">Go to the Store</a>
+
                             <div class="header__qr">
                                 <img src="/img/qr_zalo.jpg" alt="QR CODE" class="heaser__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="" class="header__qr-link">
-                                        <img src="./img/gg_play.png" alt="gg play" class="header__qr-down-img header__qr-ggplay" >
+                                        <img src="/img/gg_play.png" alt="gg play" class="header__qr-down-img header__qr-ggplay" >
                                     </a>
                                     <a href="" class="header__qr-link">
-                                        <img src="./img/app_store.png" alt="app store" class="header__qr-down-img header__qr-appstore">
+                                        <img src="/img/app_store.png" alt="app store" class="header__qr-down-img header__qr-appstore">
                                     </a>                                  
                                 </div>
                             </div>                        
                         </li>
                         <li class="header__navbar-item">
-                            <a href="./pages/connect.html"> Connect</a>
-                            
+                            <a href="/pages/connect.html"> Connect</a>
                             <a href="https://www.facebook.com/JuliaAriannn/" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-brands fa-square-facebook"></i>
                             </a>
@@ -165,7 +167,7 @@
                     <div class="header__logo">
                         <a href="/index.html">
                             <img src="/img/img_shop.png" alt="" class="header__logo-img"> 
-                        </a>                       
+                        </a>
                     </div>
 
                     <div class="header__search hide-on-mobile">
@@ -184,7 +186,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+                    
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -204,138 +206,138 @@
                                 <span class="header__cart-list-no-cart-mess">No Product</span>
                                 <div class="header__cart-have-products">
                                     <h4 class="header__cart-heading">Have some this product</h4>
-                                    <ul class="header__cart-list-iem">
-                                        <!--Cart item-->
-                                        <li class="header__cart-item">
-                                            <img class="header__cart-img" src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="" >
-                                            <div class="header__cart-item-infor">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-head-name">Lina Bell</h5>                                                
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.222.222</span>
-                                                        <span class="header__cart-item-multiply">x</span>
-                                                        <span class="header__cart-item-quatity">2</span>
+                                        <ul class="header__cart-list-iem">
+                                            <!--Cart item-->
+                                            <li class="header__cart-item">
+                                                <img class="header__cart-img" src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="" >
+                                                <div class="header__cart-item-infor">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-head-name">Lina Bell</h5>                                                
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.222.222</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-quatity">2</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Type of: Bear
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Delete</span>
+                                                        
                                                     </div>
                                                 </div>
+                                            </li>  
+                                            
+                                            <li class="header__cart-item">
+                                                <img class="header__cart-img" src="https://gaubongonline.vn/wp-content/uploads/2022/08/gau-tai-dau-ngoi-14.jpg" alt="" >
+                                                <div class="header__cart-item-infor">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-head-name">Losto Bear</h5>                                                
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.222.222</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-quatity">2</span>
+                                                        </div>
+                                                    </div>
 
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-description">
-                                                        Type of: Bear
-                                                    </span>
-                                                    <span class="header__cart-item-remove">Delete</span>
-                                                    
-                                                </div>
-                                            </div>
-                                        </li>  
-                                        
-                                        <li class="header__cart-item">
-                                            <img class="header__cart-img" src="https://gaubongonline.vn/wp-content/uploads/2022/08/gau-tai-dau-ngoi-14.jpg" alt="" >
-                                            <div class="header__cart-item-infor">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-head-name">Losto Bear</h5>                                                
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.222.222</span>
-                                                        <span class="header__cart-item-multiply">x</span>
-                                                        <span class="header__cart-item-quatity">2</span>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Type of: Bear
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Delete</span>
+                                                        
                                                     </div>
                                                 </div>
+                                            </li>
+                                            <li class="header__cart-item">
+                                                <img class="header__cart-img" src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="" >
+                                                <div class="header__cart-item-infor">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-head-name">Lina Bell</h5>                                                
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.222.222</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-quatity">2</span>
+                                                        </div>
+                                                    </div>
 
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-description">
-                                                        Type of: Bear
-                                                    </span>
-                                                    <span class="header__cart-item-remove">Delete</span>
-                                                    
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="header__cart-item">
-                                            <img class="header__cart-img" src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="" >
-                                            <div class="header__cart-item-infor">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-head-name">Lina Bell</h5>                                                
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.222.222</span>
-                                                        <span class="header__cart-item-multiply">x</span>
-                                                        <span class="header__cart-item-quatity">2</span>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Type of: Bear
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Delete</span>
+                                                        
                                                     </div>
                                                 </div>
+                                            </li> 
+                                            <li class="header__cart-item">
+                                                <img class="header__cart-img" src="https://gaubongonline.vn/wp-content/uploads/2022/08/gau-tai-dau-ngoi-14.jpg" alt="" >
+                                                <div class="header__cart-item-infor">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-head-name">Losto Bear</h5>                                                
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.222.222</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-quatity">2</span>
+                                                        </div>
+                                                    </div>
 
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-description">
-                                                        Type of: Bear
-                                                    </span>
-                                                    <span class="header__cart-item-remove">Delete</span>
-                                                    
-                                                </div>
-                                            </div>
-                                        </li> 
-                                        <li class="header__cart-item">
-                                            <img class="header__cart-img" src="https://gaubongonline.vn/wp-content/uploads/2022/08/gau-tai-dau-ngoi-14.jpg" alt="" >
-                                            <div class="header__cart-item-infor">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-head-name">Losto Bear</h5>                                                
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.222.222</span>
-                                                        <span class="header__cart-item-multiply">x</span>
-                                                        <span class="header__cart-item-quatity">2</span>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Type of: Bear
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Delete</span>
+                                                        
                                                     </div>
                                                 </div>
+                                            </li>                                   
 
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-description">
-                                                        Type of: Bear
-                                                    </span>
-                                                    <span class="header__cart-item-remove">Delete</span>
-                                                    
-                                                </div>
-                                            </div>
-                                        </li>                                   
+                                            <li class="header__cart-item">
+                                                <img class="header__cart-img" src="https://gaubongonline.vn/wp-content/uploads/2022/08/gau-tai-dau-ngoi-14.jpg" alt="" >
+                                                <div class="header__cart-item-infor">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-head-name">Losto Bear</h5>                                                
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.222.222</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-quatity">2</span>
+                                                        </div>
+                                                    </div>
 
-                                        <li class="header__cart-item">
-                                            <img class="header__cart-img" src="https://gaubongonline.vn/wp-content/uploads/2022/08/gau-tai-dau-ngoi-14.jpg" alt="" >
-                                            <div class="header__cart-item-infor">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-head-name">Losto Bear</h5>                                                
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.222.222</span>
-                                                        <span class="header__cart-item-multiply">x</span>
-                                                        <span class="header__cart-item-quatity">2</span>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Type of: Bear
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Delete</span>
+                                                        
                                                     </div>
                                                 </div>
+                                            </li>  
 
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-description">
-                                                        Type of: Bear
-                                                    </span>
-                                                    <span class="header__cart-item-remove">Delete</span>
-                                                    
-                                                </div>
-                                            </div>
-                                        </li>  
+                                            <li class="header__cart-item">
+                                                <img class="header__cart-img" src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="" >
+                                                <div class="header__cart-item-infor">
+                                                    <div class="header__cart-item-head">
+                                                        <h5 class="header__cart-item-head-name">Lina Bell</h5>                                                
+                                                        <div class="header__cart-item-price-wrap">
+                                                            <span class="header__cart-item-price">2.222.222</span>
+                                                            <span class="header__cart-item-multiply">x</span>
+                                                            <span class="header__cart-item-quatity">2</span>
+                                                        </div>
+                                                    </div>
 
-                                        <li class="header__cart-item">
-                                            <img class="header__cart-img" src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="" >
-                                            <div class="header__cart-item-infor">
-                                                <div class="header__cart-item-head">
-                                                    <h5 class="header__cart-item-head-name">Lina Bell</h5>                                                
-                                                    <div class="header__cart-item-price-wrap">
-                                                        <span class="header__cart-item-price">2.222.222</span>
-                                                        <span class="header__cart-item-multiply">x</span>
-                                                        <span class="header__cart-item-quatity">2</span>
+                                                    <div class="header__cart-item-body">
+                                                        <span class="header__cart-item-description">
+                                                            Type of: Bear
+                                                        </span>
+                                                        <span class="header__cart-item-remove">Delete</span>
+                                                        
                                                     </div>
                                                 </div>
-
-                                                <div class="header__cart-item-body">
-                                                    <span class="header__cart-item-description">
-                                                        Type of: Bear
-                                                    </span>
-                                                    <span class="header__cart-item-remove">Delete</span>
-                                                    
-                                                </div>
-                                            </div>
-                                        </li>  
-                                    </ul>
+                                            </li>  
+                                        </ul>
                                     <button class="header__cart-view-cart btn btn--primary">See cart</button>
                                 </div>
                             </div>                        
@@ -343,183 +345,26 @@
                     </div>
                 </div>
             </div>
-            <ul class="header__sort-bar">
-                <li class="header__sort-item">
-                    <a href="/pages/doll.html" class="header__sort-link">Dolls</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="/pages/teddy.html" class="header__sort-link">Teddy Bear</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Lego</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Puzzle</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Car</a>
-                </li>
-            </ul>
 
         </header>
 
         <div class="app__container">
-            <div class="grid wide">
-                <div class=" row sm-gutter app__content">
+            <div class="grid wide ">
+                <div class=" row sm-gutter connect__form-ok">
                     <!--Col-2 is list product use 2 col of 12 col-->
                     <!--grid__column-2-->
-                    <div class="col l-2 m-0 c-0">
-                        <nav class="category">
-                            <h3 class="category__heading">
-                                <i class="category__heading-icon fa-solid fa-list"></i>
-                                List Product
-                            </h3>
-                            <ul class="categor-list">
-                                <li class="category-item">
-                                    <a href="/pages/doll.html" class="category-item__link">Dolls</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="/pages/teddy.html" class="category-item__link">Teddy Bear</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Lego</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Puzzle</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Car</a>
-                                </li>
-                                
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <!--grid__column-10-->
-                    <div class="col l-10 m-12 c-12"> 
-                        <div id="slider">  
-                            <div class="slides">  
-                                <img src="./img/slide_lina.png" width="100%" />
-                            </div>
-                                
-                                <div class="slides">  
-                                <img src="./img/slide_lou.png" width="100%" />
-                            </div>
-                                
-                                <div class="slides">  
-                                <img src="./img/slide_doll1.png" width="100%" />
-                            </div> 
-                                
-                                <div class="slides">  
-                                <img src="./img/slide_snow.png" width="100%" />
-                            </div> 
-                                
-                            <div class="slides">  
-                                <img src="./img/slide_doll2.png" width="100%" />
-                            </div> 
-                                <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                                </div>
-                        </div>                   
-                    </div>
-                </div>       
-            </div>
-            <div class="grid wide new-viral--contain">
-                <h2 class="new-viral--title">NEW VIRAL</h2>
-                <br>
-                <div class="new-viral--form">
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://vn-test-11.slatic.net/p/86a6084c7f9e2ae31546ccdac7df4172.jpg);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.com.my/file/1e4e8e518a981d40da0fe4368b56e2f8);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/5dae7106a4cfa68a063025ef07b6e4a8.jpg);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/04fd2f925d3b84c41b15438cc7caa994);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://ae01.alicdn.com/kf/Hb3bcfb0f20a048b986b0438edec12275t.jpg);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col l-3 m-6 c-6 newviral--item">                               
-                        <a class="home-product-item" href="/pages/buy_product.html">
-                            <div class="home-product-item__img" style="background-image: url(https://gaubongonline.vn/wp-content/uploads/2022/09/lotso-long-min-1.jpg);"></div>
-                            <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-old">2.000.000$</span>
-                                <span class="home-product-item__price-current">1.500.000$</span>
-                            </div>
-                        </a>
+                    <div class="col l-12 m-12 c-12">                        
+                        <div class="connectok--img">
+                            <img src="/img/connect_ok.png" alt="">
+                        </div>
+                        <div class="connectok--text">
+                            <h2>Thanks for your feedback ✧*｡٩(ˊᗜˋ*)و✧*</h2>
+                        </div>
                     </div>
 
                     
-                </div>
-                
+                </div>            
             </div>
-            
         </div>
         
 
@@ -619,15 +464,15 @@
                             <img src="/img/qr_zalo.jpg" alt="" class="footer__download-qr">
                             <div class="footer_download-apps">
                                 <a href="" class="footer_download-app-link">
-                                    <img src="./img/app_store.png" alt="" class="footer_download-app-img">
+                                    <img src="/img/app_store.png" alt="" class="footer_download-app-img">
                                 </a>
                                 <a href="" class="footer_download-app-link">
-                                    <img src="./img/gg_play.png" alt="" class="footer_download-app-img">                                
+                                    <img src="/img/gg_play.png" alt="" class="footer_download-app-img">                                
                                 </a>                                    
                             </div>
                         </div>
                     </div>
-                </div>               
+                </div>              
             </div>
             <div class="footer__bottom">
                 <div class="grid__row">
@@ -748,8 +593,5 @@
         -->
     </div>
     
-
-    <script src="./js/slider_main.js"></script>
-    <script src="./js/active_listProduct.js"></script>
 </body>
 </html>

@@ -27,6 +27,29 @@ html{
 
 
 /*ANIMATION*/
+@-webkit-keyframes colorchangeText {
+    0% { color: rgb(230, 9, 101);}
+    
+    10% {color: #8e44ad;}
+    
+    20% {color: #FF597B;}
+    
+    30% {color: #E98EAD;}
+    
+    40% {color: #CB1C8D;}
+    
+    50% {color: #460C68;}
+    
+    60% {color: #9C254D;}
+    
+    70% {color: #863A6F;}
+    80% {color: #FF8DC7; }
+    
+    90% { color: #E80F88;}
+    
+    100% {color: pink;}
+  }
+
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -73,6 +96,10 @@ html{
     border-radius: 3px;
     animation: growth linear 0.1s;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 
 /*BTN STYLE*/
 .btn{
@@ -91,6 +118,10 @@ html{
     align-items: center;
     line-height: 1.6rem;
     background-color: var(--white-color);
+}
+.btn-outline{
+    outline: 0.5px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .btn.btn--nomal:hover{

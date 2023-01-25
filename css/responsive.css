@@ -54,6 +54,11 @@
     .header__sort-bar{
        display: flex;
     }  
+
+    .no-product-text h2:first-child {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
 }
 
 

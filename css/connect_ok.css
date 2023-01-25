@@ -1,0 +1,12 @@
+.connect__form-ok{
+    background-color: white;
+    text-align: center;
+}
+
+.connectok--text h2{
+    font-weight: 600;
+    color:#313131;
+    font-size: 40px;
+    -webkit-animation:colorchangeText 20s infinite alternate;    
+    
+  }

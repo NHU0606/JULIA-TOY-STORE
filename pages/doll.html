@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/css/buy_product.css">
+    <link rel="stylesheet" href="/css/list_product.css">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/grid.css">
     <link rel="stylesheet" href="/css/responsive.css">
@@ -23,20 +23,23 @@
                 <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
-                            Go to the Store
+                            <a href="/index.html">Go to the Store</a>
+
                             <div class="header__qr">
-                                <img src="./asset/img/qr.png" alt="QR CODE" class="heaser__qr-img">
+                                <img src="/img/qr_zalo.jpg" alt="QR CODE" class="heaser__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="" class="header__qr-link">
-                                        <img src="./asset/img/gg_play.png" alt="gg play" class="header__qr-down-img header__qr-ggplay" >
+                                        <img src="/img/gg_play.png" alt="gg play" class="header__qr-down-img header__qr-ggplay" >
                                     </a>
                                     <a href="" class="header__qr-link">
-                                        <img src="./asset/img/app_store.png" alt="app store" class="header__qr-down-img header__qr-appstore">
+                                        <img src="/img/app_store.png" alt="app store" class="header__qr-down-img header__qr-appstore">
                                     </a>                                  
                                 </div>
                             </div>                        
                         </li>
-                        <li class="header__navbar-item">Connect
+                        <li class="header__navbar-item">
+                            <a href="/pages/connect.html"> Connect</a>
+                            
                             <a href="https://www.facebook.com/JuliaAriannn/" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-brands fa-square-facebook"></i>
                             </a>
@@ -134,25 +137,25 @@
                                 <i class="fa-solid fa-xmark"></i>
                             </label>
                             <ul class="nav__mobile-list">
-                                <h3 class="nav__mobile-tittle">Thiet lap tai khoan</h3>
+                                <h3 class="nav__mobile-tittle">Account settings</h3>
                                 <ul class="nav__list--account"> 
                                     <h4>ACCOUNT</h4>
-                                    <li class="nav--accout-item">Ho so cua toi</li>
-                                    <li class="nav--accout-item">Dia chi</li>                                     
+                                    <li class="nav--accout-item">My profile</li>
+                                    <li class="nav--accout-item">Address</li>                                     
                                 </ul>
 
                                 <ul class="nav__list--account">
                                     <h4>SETTING</h4>
-                                    <li class="nav--accout-item">Cai dat quyen rieng tu</li>
-                                    <li class="nav--accout-item">Ngon ngu</li>                                     
+                                    <li class="nav--accout-item">Privacy settings</li>
+                                    <li class="nav--accout-item">Language</li>                                     
                                 </ul>
 
                                 <ul class="nav__list--account"> 
-                                    <h4>HO TRO</h4>                                     
-                                    <li class="nav--accout-item">Trung tam ho tro</li>
-                                    <li class="nav--accout-item">Tieu chuan cong dong</li>
-                                    <li class="nav--accout-item">Dieu khoan</li>
-                                    <li class="nav--accout-item">Danh gia</li>                                     
+                                    <h4>SUPPORT</h4>                                     
+                                    <li class="nav--accout-item">Support center</li>
+                                    <li class="nav--accout-item">Community Standards</li>
+                                    <li class="nav--accout-item">Rules</li>
+                                    <li class="nav--accout-item">Evaluate</li>                                     
                                 </ul>
                                 
                             </ul>
@@ -190,7 +193,7 @@
                     <div class="header__cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                            <span class="header__cart--notice">3</span>
+                            <span class="header__cart--notice">6</span>
     
                             <!--No cart: so u have to plus 1 class is class="header__cart-list--no-cart" 
                                 with class="header__cart-list "
@@ -340,23 +343,25 @@
                     </div>
                 </div>
             </div>
-
             <ul class="header__sort-bar">
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Lien quan</a>
+                    <a href="/pages/doll.html" class="header__sort-link header__sort-link--active">Dolls</a>
                 </li>
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link header__sort-link--active">Moi nhat</a>
+                    <a href="/pages/teddy.html" class="header__sort-link ">Teddy Bear</a>
                 </li>
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Ban chay</a>
+                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Lego</a>
                 </li>
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Gia</a>
+                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Puzzle</a>
                 </li>
-
+                <li class="header__sort-item">
+                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Car</a>
+                </li>
             </ul>
 
+            
         </header>
 
         <div class="app__container">
@@ -376,7 +381,17 @@
                                 </li>
                                 <li class="category-item">
                                     <a href="/pages/teddy.html" class="category-item__link">Teddy Bear</a>
-                                </li>                                
+                                </li>
+                                <li class="category-item">
+                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Lego</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Puzzle</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Car</a>
+                                </li>
+                                
                             </ul>
                         </nav>
                     </div>
@@ -390,7 +405,7 @@
                                 <!--PRODUCT ITEM-->
                                 <!--grid__column-2-4-->
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes</h4>
                                         <div class="home-product-item__price">
@@ -430,7 +445,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6"">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://images.unsplash.com/photo-1613135492018-73d6c13ab4a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
                                         <h4 class="home-product-item__name">Doll 50cm Barbie little</h4>
                                         <div class="home-product-item__price">
@@ -470,7 +485,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://images.unsplash.com/photo-1613626253486-e2d1d9fd9bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little</h4>
                                         <div class="home-product-item__price">
@@ -510,7 +525,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.com.my/file/5d7dfab7b2d2a674654c91d57b93666c);"></div>
                                         <h4 class="home-product-item__name">doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -550,7 +565,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.com.my/file/1e4e8e518a981d40da0fe4368b56e2f8);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little</h4>
                                         <div class="home-product-item__price">
@@ -590,7 +605,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://ae01.alicdn.com/kf/He26b9b5ef9c94529901336e86547fe468/30cm-Doll-BJD1-6-Multiple-Hair-Color-Dolls-Brown-Big-Eyes-22-Removable-Joints-Matching-Fashion.jpg);"></div>
                                         <h4 class="home-product-item__name">Cute baby doll</h4>
                                         <div class="home-product-item__price">
@@ -630,7 +645,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.com.my/file/a817e1ecf722aa382697a3d8bcd56b62);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -670,7 +685,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/29fc7111916b0ac91c0165742aa307e8.jpg);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -710,7 +725,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/5dae7106a4cfa68a063025ef07b6e4a8.jpg);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -750,7 +765,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/3ac59837239a726ed89efa9f0648fc52.jpg);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -790,7 +805,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.ph/file/80eeb807ddee79969dc896b4d3d24edb);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -830,7 +845,7 @@
                                 </div>
                                 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/cfa7d596fcc6efc0a447c136c25f4945.jpg);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -870,7 +885,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/c3b5c68d41f2920ae428d95512c50d38.jpg);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -910,7 +925,7 @@
                                 </div>
 
                                 <div class="col l-2-4 m-4 c-6">                               
-                                    <a class="home-product-item" href="#">
+                                    <a class="home-product-item" href="/pages/buy_product.html">
                                         <div class="home-product-item__img" style="background-image: url(https://static-01.daraz.com.bd/p/3ac59837239a726ed89efa9f0648fc52.jpg);"></div>
                                         <h4 class="home-product-item__name">Doll 30cm Barbie little princess set with 3D eyes and 22  joints 6 points</h4>
                                         <div class="home-product-item__price">
@@ -1001,19 +1016,19 @@
                         <h3 class="footer__heading">Take care customers</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                                <a href="" class="footer-item__link">Shopping guide</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Vận Chuyển</a>
+                                <a href="" class="footer-item__link">Transport</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                         </ul>
                     </div>
@@ -1022,19 +1037,19 @@
                         <h3 class="footer__heading">Introduce</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                                <a href="" class="footer-item__link">Shopping guide</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Vận Chuyển</a>
+                                <a href="" class="footer-item__link">Transport</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                         </ul>
                     </div>
@@ -1043,19 +1058,19 @@
                         <h3 class="footer__heading">Take care customers</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                                <a href="" class="footer-item__link">Shopping guide</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Vận Chuyển</a>
+                                <a href="" class="footer-item__link">Transport</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                         </ul>
                     </div>
@@ -1090,10 +1105,10 @@
                             <img src="/img/qr_zalo.jpg" alt="" class="footer__download-qr">
                             <div class="footer_download-apps">
                                 <a href="" class="footer_download-app-link">
-                                    <img src="./asset/img/app_store.png" alt="" class="footer_download-app-img">
+                                    <img src="/img/app_store.png" alt="" class="footer_download-app-img">
                                 </a>
                                 <a href="" class="footer_download-app-link">
-                                    <img src="./asset/img/gg_play.png" alt="" class="footer_download-app-img">                                
+                                    <img src="/img/gg_play.png" alt="" class="footer_download-app-img">                                
                                 </a>                                    
                             </div>
                         </div>
@@ -1102,7 +1117,7 @@
             </div>
             <div class="footer__bottom">
                 <div class="grid__row">
-                    <p class="footer__text">© 2020 - Bản quyền thuộc về Julia Toy Shop</p>
+                    <p class="footer__text">© 2022 - Copyright belongs to Julia Toy Shop</p>
                 </div>
             </div>
         </footer>
@@ -1218,6 +1233,7 @@
         </div>
         -->
     </div>
+    <script src="/js/active_listProduct.js"></script>
     
 </body>
 </html>

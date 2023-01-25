@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Julia's Toy Store</title>
+    <title>OOPS!!!</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/css/buy_product.css">
+    <link rel="stylesheet" href="/css/oop_noProduct.css">
+    <link rel="stylesheet" href="/css/list_product.css">
     <link rel="stylesheet" href="/css/slider_main.css">
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="shortcut icon" type="image/png" href="/img/fav1.png">
@@ -24,9 +25,10 @@
                 <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
-                            Go to the Store
+                            <a href="/index.html">Go to the Store</a>
+
                             <div class="header__qr">
-                                <img src="/img/qr.png" alt="QR CODE" class="heaser__qr-img">
+                                <img src="/img/qr_zalo.jpg" alt="QR CODE" class="heaser__qr-img">
                                 <div class="header__qr-apps">
                                     <a href="" class="header__qr-link">
                                         <img src="/img/gg_play.png" alt="gg play" class="header__qr-down-img header__qr-ggplay" >
@@ -37,7 +39,9 @@
                                 </div>
                             </div>                        
                         </li>
-                        <li class="header__navbar-item">Connect
+                        <li class="header__navbar-item">
+                            <a href="/pages/connect.html"> Connect</a>
+                            
                             <a href="https://www.facebook.com/JuliaAriannn/" class="header__navbar-icon-link">
                                 <i class="header__navbar-icon fa-brands fa-square-facebook"></i>
                             </a>
@@ -135,25 +139,25 @@
                                 <i class="fa-solid fa-xmark"></i>
                             </label>
                             <ul class="nav__mobile-list">
-                                <h3 class="nav__mobile-tittle">Thiet lap tai khoan</h3>
+                                <h3 class="nav__mobile-tittle">Account settings</h3>
                                 <ul class="nav__list--account"> 
                                     <h4>ACCOUNT</h4>
-                                    <li class="nav--accout-item">Ho so cua toi</li>
-                                    <li class="nav--accout-item">Dia chi</li>                                     
+                                    <li class="nav--accout-item">My profile</li>
+                                    <li class="nav--accout-item">Address</li>                                     
                                 </ul>
 
                                 <ul class="nav__list--account">
                                     <h4>SETTING</h4>
-                                    <li class="nav--accout-item">Cai dat quyen rieng tu</li>
-                                    <li class="nav--accout-item">Ngon ngu</li>                                     
+                                    <li class="nav--accout-item">Privacy settings</li>
+                                    <li class="nav--accout-item">Language</li>                                     
                                 </ul>
 
                                 <ul class="nav__list--account"> 
-                                    <h4>HO TRO</h4>                                     
-                                    <li class="nav--accout-item">Trung tam ho tro</li>
-                                    <li class="nav--accout-item">Tieu chuan cong dong</li>
-                                    <li class="nav--accout-item">Dieu khoan</li>
-                                    <li class="nav--accout-item">Danh gia</li>                                     
+                                    <h4>SUPPORT</h4>                                     
+                                    <li class="nav--accout-item">Support center</li>
+                                    <li class="nav--accout-item">Community Standards</li>
+                                    <li class="nav--accout-item">Rules</li>
+                                    <li class="nav--accout-item">Evaluate</li>                                     
                                 </ul>
                                 
                             </ul>
@@ -191,7 +195,7 @@
                     <div class="header__cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                            <span class="header__cart--notice">3</span>
+                            <span class="header__cart--notice">6</span>
     
                             <!--No cart: so u have to plus 1 class is class="header__cart-list--no-cart" 
                                 with class="header__cart-list "
@@ -344,19 +348,22 @@
 
             <ul class="header__sort-bar">
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Lien quan</a>
+                    <a href="/pages/doll.html" class="header__sort-link">Dolls</a>
                 </li>
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link header__sort-link--active">Moi nhat</a>
+                    <a href="/pages/teddy.html" class="header__sort-link">Teddy Bear</a>
                 </li>
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Ban chay</a>
+                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Lego</a>
                 </li>
                 <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Gia</a>
+                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Puzzle</a>
                 </li>
-
+                <li class="header__sort-item">
+                    <a href="/pages/oop_noProduct.html" class="header__sort-link">Car</a>
+                </li>
             </ul>
+
 
         </header>
 
@@ -379,13 +386,13 @@
                                     <a href="/pages/teddy.html" class="category-item__link">Teddy Bear</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Lego</a>
+                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Lego</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Puzzle</a>
+                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Puzzle</a>
                                 </li>
                                 <li class="category-item">
-                                    <a href="" class="category-item__link">Car</a>
+                                    <a href="/pages/oop_noProduct.html" class="category-item__link">Car</a>
                                 </li>
                                 
                             </ul>
@@ -394,11 +401,15 @@
 
                     <!--grid__column-10-->
                     <div class="col l-10 m-12 c-12"> 
-                          <div class="no-product-container">
+                        <div class="home-product">
                             <div class="no-product-img">
                                 <img src="/img/opp_noProduct.png" alt="">
                             </div>
-                          </div>                
+                            <div class="no-product-text">
+                                <h2>Oh no. We <span>don't</span> have products for this right now</h2>
+                                <h2>We will update in the future. Let's see another products</h2>
+                            </div>
+                        </div>                
                     </div>
                 </div>            
             </div>
@@ -412,19 +423,19 @@
                         <h3 class="footer__heading">Take care customers</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                                <a href="" class="footer-item__link">Shopping guide</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Vận Chuyển</a>
+                                <a href="" class="footer-item__link">Transport</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                         </ul>
                     </div>
@@ -433,19 +444,19 @@
                         <h3 class="footer__heading">Introduce</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                                <a href="" class="footer-item__link">Shopping guide</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Vận Chuyển</a>
+                                <a href="" class="footer-item__link">Transport</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                         </ul>
                     </div>
@@ -454,19 +465,19 @@
                         <h3 class="footer__heading">Take care customers</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                                <a href="" class="footer-item__link">Shopping guide</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Vận Chuyển</a>
+                                <a href="" class="footer-item__link">Transport</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                             <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                                <a href="" class="footer-item__link">Help Center</a>
                             </li>
                         </ul>
                     </div>
@@ -501,15 +512,15 @@
                             <img src="/img/qr_zalo.jpg" alt="" class="footer__download-qr">
                             <div class="footer_download-apps">
                                 <a href="" class="footer_download-app-link">
-                                    <img src="/img/app_store.png" alt="" class="footer_download-app-img">
+                                    <img src="./img/app_store.png" alt="" class="footer_download-app-img">
                                 </a>
                                 <a href="" class="footer_download-app-link">
-                                    <img src="/img/gg_play.png" alt="" class="footer_download-app-img">                                
+                                    <img src="./img/gg_play.png" alt="" class="footer_download-app-img">                                
                                 </a>                                    
                             </div>
                         </div>
                     </div>
-                </div>               
+                </div>              
             </div>
             <div class="footer__bottom">
                 <div class="grid__row">
@@ -629,5 +640,6 @@
         </div>
         -->
     </div>
+    <script src="/js/active_listProduct.js"></script>
 </body>
 </html>

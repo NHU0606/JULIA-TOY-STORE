@@ -22,7 +22,7 @@ function changeSlide(){
   
   index++;
   
-  setTimeout(changeSlide,4000);
+  setTimeout(changeSlide,5000);
   
 }
 

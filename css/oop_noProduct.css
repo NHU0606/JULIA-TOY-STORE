@@ -1,0 +1,17 @@
+.home-product{
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    margin: 18px 0 20px;
+}
+
+.no-product-text h2:first-child{
+    font-size: 3.125rem;
+}
+
+.no-product-text h2:last-child{
+    font-size: 1.875rem;
+}
+.no-product-text span{
+    color: rgb(230, 9, 101);
+}
