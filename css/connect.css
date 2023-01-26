@@ -4,15 +4,18 @@
 
 }
 
-.tittle_pt{
+.tittle_pt {
+}
+.row.sm-gutter.connect__form{
+    padding-top: 0px;
 
 }
 
 .tittle__main p {
     font-size: 60px;
-    margin: 0;
+    margin: 20px 0;
+   
 }
-
 .tittle__main {
     
     font-family: 'Inter', sans-serif;
@@ -94,3 +97,23 @@
 .btn{
     margin-left: 0;
 }
+
+
+
+/* --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height)); */
+    @media (max-width: 605px){    
+        .tittle__main p {
+            font-size: 40px;       
+            margin: 10px 0;    
+        }   
+        
+        .tittle_pt {
+            padding-top: 20px;
+        }
+
+        .tittle__sub p {
+            font-size: 25px;
+        }
+    }

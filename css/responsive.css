@@ -110,3 +110,42 @@
         margin: 0 0 0 10px;
     }
 }
+
+
+/*form contact*/
+
+
+@media (max-width: 1023px){
+    .app__container--connect {
+        margin-top: 120px;
+    }
+    .tittle_pt {
+        padding-top: 0;
+    }   
+    
+}
+
+
+/*text list product*/
+
+
+@media (max-width: 1240px){
+    .category__heading {
+        font-size: 1.6rem;
+    }  
+    
+}
+
+/*img oop no product*/
+
+@media (max-width: 1240px){
+    .no-product-img img{
+        width: 200px;
+    }
+    .no-product-text h2:first-child {
+        font-size: 2rem;
+    }
+    .no-product-text h2:last-child{
+        font-size: 1.6rem;
+    }
+}

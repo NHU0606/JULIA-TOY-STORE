@@ -9,4 +9,19 @@
     font-size: 40px;
     -webkit-animation:colorchangeText 20s infinite alternate;    
     
-  }
+}
+
+@media (max-width: 1023px){    
+    .connectok--text h2{
+        line-height: 1.1;
+        font-size: 30px;
+    }
+}
+@media (max-width: 600px){    
+    .connectok--text h2{
+        font-size: 20px;
+    }
+    img {
+        width: 300px;
+    }
+}
