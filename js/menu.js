@@ -2,29 +2,54 @@
 
 
 $(document).ready(function() {
-  // this line for slider appear
+
   $("#sub-content").load(`pages/layout/slider.html`);
 
-  // for teddy
-//   $("#sub-content").load(`pages/teddy.html`);
-
-  // for list doll appear
-  // $("#sub-content").load(`pages/doll.html`);
-
-  //for no products
-  // $("#sub-content").load(`pages/oop_noProduct.html`);
-
-
   const items = document.querySelectorAll('.category-item')
-  const itemActive = document.querySelector('.category-item.category-item--active')
+  const contentListPro = document.getElementById(('content'))
 
     items.forEach(item => {
-        item.onclick = function() {
-          item.classList.add('category-item--active') 
-          itemActive.classList.remove('category-item--active')        
+      let checkSlug = '';
+        item.onclick = function(e) {
+          checkSlug = item.getAttribute('data-slug')
+          removeActive(checkSlug)     
+          loadData(checkSlug)     
+          contentListPro.style.display = 'none';
         }
     });
 
+    function removeActive(checkSlug) {
+      items.forEach(item => {
+        if(item.getAttribute('data-slug') === checkSlug) {
+          item.classList.add('category-item--active')
+        }
+        else {
+          item.classList.remove('category-item--active')
+        }
+      })
+    }
+
+    function loadData(checkSlug) {
+      switch(checkSlug) {
+        case 'dolls':
+          $("#sub-content").load(`pages/doll.html`);
+          break;
+        case 'teddy':
+          $("#sub-content").load(`pages/teddy.html`);
+          break;
+        case 'lego':
+          $("#sub-content").load(`pages/oop_noProduct.html`);
+          break;  
+        case 'puzzle':
+          $("#sub-content").load(`pages/oop_noProduct.html`);
+          break; 
+        case 'car':
+          $("#sub-content").load(`pages/oop_noProduct.html`);
+          break; 
+        default:
+          $("#sub-content").load(`pages/layout/slider.html`);
+      }
+    }
     
 
 })
