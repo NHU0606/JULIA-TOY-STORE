@@ -5,23 +5,16 @@ $(document).ready(function () {
   // this line for slider appear
   $("#sub-content").load(`pages/layout/slider.html`);
 
-  // for teddy
-  //   $("#sub-content").load(`pages/teddy.html`);
-
-  // for list doll appear
-  // $("#sub-content").load(`pages/doll.html`);
-
-  //for no products
-  // $("#sub-content").load(`pages/oop_noProduct.html`);
-
-
   const items = document.querySelectorAll('.category-item')
+  const contentEl = document.getElementById('content');
 
   items.forEach(item => {
     let checkSlug = '';
     item.onclick = function (e) {
       checkSlug = item.getAttribute('data-slug');
       removeActive(checkSlug)
+      loadData(checkSlug);
+      contentEl.style.display = 'none';
     }
   });
 
@@ -33,6 +26,20 @@ $(document).ready(function () {
         item.classList.remove('category-item--active')
       }
     })
+  }
+
+  function loadData(checkSlug) {
+    switch (checkSlug) {
+      case 'dolls': 
+        $("#sub-content").load(`pages/doll.html`);
+        break;
+      case 'teddy': 
+        $("#sub-content").load(`pages/teddy.html`);
+        break;
+      default: 
+        $("#sub-content").load(`pages/layout/slider.html`);
+    }
+     
   }
 
 })
