@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 1,
+      "text": "Dolls",
+      "slug": "dolls"
+    }
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 1,
+      "text": "Dolls",
+      "slug": "dolls"
+    }
+  },
+  {
+    "id": 3,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 2,
+      "text": "Teddy Bear",
+      "slug": "teddy"
+    }
+  },
+  {
+    "id": 4,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 1,
+      "text": "Dolls",
+      "slug": "dolls"
+    }
+  },
+  {
+    "id": 5,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 2,
+      "text": "Teddy Bear",
+      "slug": "teddy"
+    }
+  },
+  {
+    "id": 6,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 3,
+      "text": "Lego",
+      "slug": "lego"
+    }
+  },
+  {
+    "id": 7,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 4,
+      "text": "Puzzle",
+      "slug": "puzzle"
+    }
+  },
+  {
+    "id": 8,
+    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "name": "Doll 30cm Barbie little princess set with 3D eyes",
+    "new_cost": "2.000.000$",
+    "old_cost": "1.500.000$",
+    "category": {
+      "id": 1,
+      "text": "Dolls",
+      "slug": "dolls"
+    }
+  }
+]
