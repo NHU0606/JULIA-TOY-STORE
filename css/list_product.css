@@ -1350,6 +1350,7 @@ i.home-product-item__like-icon-fill{
 
 .header__sort-item{
     flex: 1;
+    cursor: pointer;
 }
 
 .header__sort-link{
