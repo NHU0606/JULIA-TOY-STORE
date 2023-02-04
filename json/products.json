@@ -2,97 +2,57 @@
   {
     "id": 1,
     "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-    "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 1,
-      "text": "Dolls",
-      "slug": "dolls"
-    }
+    "name": "Lina Bell Bear 40cm small",
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 2,
     "image": "https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
     "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 1,
-      "text": "Dolls",
-      "slug": "dolls"
-    }
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 3,
-    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-    "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 2,
-      "text": "Teddy Bear",
-      "slug": "teddy"
-    }
+    "image": "https://vn-test-11.slatic.net/p/86a6084c7f9e2ae31546ccdac7df4172.jpg",
+    "name": "Lotso Hugging Bear set with 3D eyes cute for kids",
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 4,
-    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-    "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 1,
-      "text": "Dolls",
-      "slug": "dolls"
-    }
+    "image": "https://cf.shopee.com.my/file/1e4e8e518a981d40da0fe4368b56e2f8",
+    "name": "Doll 50cm Barbie little",
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 5,
-    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
+    "image": "https://static-01.daraz.com.bd/p/5dae7106a4cfa68a063025ef07b6e4a8.jpg",
     "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 2,
-      "text": "Teddy Bear",
-      "slug": "teddy"
-    }
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 6,
-    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-    "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 3,
-      "text": "Lego",
-      "slug": "lego"
-    }
+    "image": "https://cf.shopee.vn/file/04fd2f925d3b84c41b15438cc7caa994",
+    "name": "Stella Lou Disney little princess set with 3D eyes",
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 7,
-    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-    "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 4,
-      "text": "Puzzle",
-      "slug": "puzzle"
-    }
+    "image": "https://ae01.alicdn.com/kf/Hb3bcfb0f20a048b986b0438edec12275t.jpg",
+    "name": "Lina Bell Bear 40cm small cute for kids",
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   },
   {
     "id": 8,
-    "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-    "name": "Doll 30cm Barbie little princess set with 3D eyes",
-    "new_cost": "2.000.000$",
-    "old_cost": "1.500.000$",
-    "category": {
-      "id": 1,
-      "text": "Dolls",
-      "slug": "dolls"
-    }
+    "image": "https://gaubongonline.vn/wp-content/uploads/2022/09/lotso-long-min-1.jpg",
+    "name": "Lotso Hugging Bear set with 3D eyes",
+    "old_cost": "2.000.000$",
+    "new_cost": "1.500.000$"
   }
 ]
