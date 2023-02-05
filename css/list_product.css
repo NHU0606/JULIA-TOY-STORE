@@ -677,6 +677,7 @@
 .header__search-history-item{
     height: 40px;
     padding: 0 12px;
+    list-style: none;
 }
 
 .header__search-history-item:hover{
