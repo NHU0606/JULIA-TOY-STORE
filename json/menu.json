@@ -5,21 +5,22 @@
         "slug": "dolls"
     },
     {
+        "id": 2,
         "text": "Teddy Bear",
         "slug": "teddy"
     },
     {
-        "id": 2,
+        "id": 3,
         "text": "Lego",
         "slug": "lego"
     },
     {
-        "id": 3,
+        "id": 4,
         "text": "Puzzle",
         "slug": "puzzle"
     },
     {
-        "id": 4,
+        "id": 5,
         "text": "Car",
         "slug": "car"
     }

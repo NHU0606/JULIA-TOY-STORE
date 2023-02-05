@@ -35,7 +35,7 @@
 
 .product__description--img{
     width: 400px;
-    height: auto;
+    height: 500px;
     object-fit: cover;
     text-align: center;
     padding: 20px 0;

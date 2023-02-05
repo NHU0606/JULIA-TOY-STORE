@@ -6,9 +6,10 @@ $(document).ready(function() {
     .then(newViralArray => {
         let viralItem = ''
         newViralArray.forEach(item => {
+            console.log(item.category)
             viralItem += `
             <div class="col l-3 m-6 c-6 newviral--item">
-                <a class="home-product-item" href="pages/buy_product.html">
+                <a class="home-product-item" href="?id=${item.id}">
                     <div class="home-product-item__img"
                         style="background-image: url(${item.image});">
                     </div>

@@ -1,13 +1,16 @@
 $(document).ready(function() {
   $("#header").load(`pages/layout/header.html`);
 
-  // this line for laptop
-  $("#menu").load(`pages/layout/menu.html`)
+  let pathName = window.location.search;
+  let check = pathName.includes("?id=")
 
-  // this line for < ipad 
-  // $('#menu').load(`pages/layout/menu_mobile.html`)
-  
-  $("#content").load(`pages/newViral.html`);  
+  if(check) {
+    $("#content").load(`pages/detail.html`);  
+  }
+  else {
+    $("#menu").load(`pages/layout/menu.html`)
+    $("#content").load(`pages/newViral.html`);  
+  }
 
   $("#footer").load(`pages/layout/footer.html`);
 });
