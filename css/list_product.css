@@ -868,6 +868,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     cursor: pointer;
+    color: black;
 }
 
 .header__cart-item-remove:hover{

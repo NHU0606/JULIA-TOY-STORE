@@ -180,7 +180,7 @@
             <div class="header__cart">
                 <div class="header__cart-wrap">
                     <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
-                    <span class="header__cart--notice">6</span>
+                    <span id="count-cart" class="header__cart--notice">0</span>
 
                     <!--No cart: so u have to plus 1 class is class="header__cart-list--no-cart" 
                       with class="header__cart-list "
@@ -191,9 +191,9 @@
                         <span class="header__cart-list-no-cart-mess">No Product</span>
                         <div class="header__cart-have-products">
                             <h4 class="header__cart-heading">Have some this product</h4>
-                            <ul class="header__cart-list-iem">
+                            <ul id="list-cart" class="header__cart-list-iem">
                                 <!--Cart item-->
-                                <li class="header__cart-item">
+                                <!-- <li class="header__cart-item">
                                     <img class="header__cart-img"
                                         src="https://cf.shopee.cl/file/fa1f8883011ca93c1136a66f764b3538" alt="">
                                     <div class="header__cart-item-infor">
@@ -330,9 +330,9 @@
 
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
-                            <button class="header__cart-view-cart btn btn--primary">See cart</button>
+                            <button class="header__cart-view-cart btn btn--primary" id="see-cart">See cart</button>
                         </div>
                     </div>
                 </div>
@@ -342,4 +342,5 @@
     <div id="menu-mobile"></div>
     <script src="../js/menu_mobile.js"></script>
     <script src="./js/search.js"></script>   
+    <script src="./js/cart.js"></script>   
 </header>
