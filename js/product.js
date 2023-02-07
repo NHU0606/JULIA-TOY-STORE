@@ -2,7 +2,7 @@ $(document).ready(function() {
     const newViral = document.getElementById('new-viral--form')
 
     fetch("../json/product.json")
-    .then(response =>response.json())
+    .then(response => response.json())
     .then(newViralArray => {
         let viralItem = ''
         newViralArray.forEach(item => {

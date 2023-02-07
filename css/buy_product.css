@@ -18,6 +18,7 @@
 
 }
 
+
 .product--right-title h2{
     line-height: 1;
     font-weight: 400;
@@ -25,7 +26,23 @@
     margin-top: 0;
 }
 
-.product--right-price h2{
+.product--right-price{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#product-costOld{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(166, 166, 166);
+    padding: 15px 0;
+    text-decoration: line-through;
+
+}
+
+#product-cost {
     box-sizing: inherit;
     font-size: 30px;
     font-weight: 400;

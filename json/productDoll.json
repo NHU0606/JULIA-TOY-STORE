@@ -1,22 +1,22 @@
 [
     {
         "id": 1,
-        "image": "https://media.karousell.com/media/photos/products/2021/10/23/shanghai_disneyland_lina_bell_1635009734_e18b2252.jpg",
-        "name": "Lina Bell Bear 40cm small",        
+        "image": "https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "name": "Doll 30cm Barbie little princess set with 3D eyes",        
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",   
         "desTitle": "PRODUCT DESCRIPTION",  
         "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
         "category":{
-            "id": 2,
-            "text": "Teddy Bear",
-            "slug": "teddy"
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
         }       
     
     },
     {
         "id": 2,
-        "image": "https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+        "image": "https://images.unsplash.com/photo-1613135492018-73d6c13ab4a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         "name": "Doll 30cm Barbie little princess set with 3D eyes",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
@@ -30,21 +30,21 @@
     },
     {
         "id": 3,
-        "image": "https://vn-test-11.slatic.net/p/86a6084c7f9e2ae31546ccdac7df4172.jpg",
+        "image": "https://images.unsplash.com/photo-1613626253486-e2d1d9fd9bc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         "name": "Lotso Hugging Bear set with 3D eyes cute for kids set with 3D eyes cute for kids",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
         "desTitle": "PRODUCT DESCRIPTION",  
         "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
         "category":{
-            "id": 2,
-            "text": "Teddy Bear",
-            "slug": "teddy"
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
         }
     },
     {
         "id": 4,
-        "image": "https://cf.shopee.com.my/file/1e4e8e518a981d40da0fe4368b56e2f8",
+        "image": "https://cf.shopee.com.my/file/5d7dfab7b2d2a674654c91d57b93666c",
         "name": "Doll 50cm Barbie little",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
@@ -59,7 +59,7 @@
 
     {
         "id": 5,
-        "image": "https://static-01.daraz.com.bd/p/5dae7106a4cfa68a063025ef07b6e4a8.jpg",
+        "image": "https://cf.shopee.com.my/file/1e4e8e518a981d40da0fe4368b56e2f8",
         "name": "Doll 30cm Barbie little princess set with 3D eyes",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
@@ -73,44 +73,89 @@
     },
     {
         "id": 6,
-        "image": "https://cf.shopee.vn/file/04fd2f925d3b84c41b15438cc7caa994",
+        "image": "https://ae01.alicdn.com/kf/He26b9b5ef9c94529901336e86547fe468/30cm-Doll-BJD1-6-Multiple-Hair-Color-Dolls-Brown-Big-Eyes-22-Removable-Joints-Matching-Fashion.jpg",
         "name": "Stella Lou Disney little princess set with 3D eyes",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
         "desTitle": "PRODUCT DESCRIPTION",  
         "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
         "category":{
-            "id": 2,
-            "text": "Teddy Bear",
-            "slug": "teddy"
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
         }
     },
     {
         "id": 7,
-        "image": "https://ae01.alicdn.com/kf/Hb3bcfb0f20a048b986b0438edec12275t.jpg",
+        "image": "https://cf.shopee.com.my/file/a817e1ecf722aa382697a3d8bcd56b62",
         "name": "Lina Bell Bear 40cm small cute for kids",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
         "desTitle": "PRODUCT DESCRIPTION",  
         "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
         "category":{
-            "id": 2,
-            "text": "Teddy Bear",
-            "slug": "teddy"
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
         }
     },
     {
         "id": 8,
-        "image": "https://gaubongonline.vn/wp-content/uploads/2022/09/lotso-long-min-1.jpg",
+        "image": "https://static-01.daraz.com.bd/p/29fc7111916b0ac91c0165742aa307e8.jpg",
         "name": "Lotso Hugging Bear set with 3D eyes",
         "old_cost": "2.000.000$",
         "new_cost": "1.500.000$",
         "desTitle": "PRODUCT DESCRIPTION",  
         "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
         "category":{
-            "id": 2,
-            "text": "Teddy Bear",
-            "slug": "teddy"
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
+        }       
+    }
+    {
+        "id": 9,
+        "image": "https://static-01.daraz.com.bd/p/5dae7106a4cfa68a063025ef07b6e4a8.jpg",
+        "name": "Lotso Hugging Bear set with 3D eyes",
+        "old_cost": "2.000.000$",
+        "new_cost": "1.500.000$",
+        "desTitle": "PRODUCT DESCRIPTION",  
+        "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
+        "category":{
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
         }
+
+    }
+    {
+        "id": 10,
+        "image": "https://static-01.daraz.com.bd/p/3ac59837239a726ed89efa9f0648fc52.jpg",
+        "name": "Lotso Hugging Bear set with 3D eyes",
+        "old_cost": "2.000.000$",
+        "new_cost": "1.500.000$",
+        "desTitle": "PRODUCT DESCRIPTION",  
+        "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
+        "category":{
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
+        }
+
+    }
+    {
+        "id": 11,
+        "image": "https://cf.shopee.ph/file/80eeb807ddee79969dc896b4d3d24edb",
+        "name": "Lotso Hugging Bear set with 3D eyes",
+        "old_cost": "2.000.000$",
+        "new_cost": "1.500.000$",
+        "desTitle": "PRODUCT DESCRIPTION",  
+        "desSub": "All goods are available, the condition is still or out of stock and the quantity will be continuously updated by Milk Cat.</br> The 20cm type is very good for normal body and even fat body, just need to separate the joints. </br>The 30cm type can be used for the whole body shorter than 30cm, just need to separate the joints and it's ok.",      
+        "category":{
+            "id": 1,
+            "text": "Dolls",
+            "slug": "dolls"
+        }
+
     }
 ]
