@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+:root {
+  --dark_blue: rgb(31, 32, 114);
+  --blue: rgb(202, 228, 253);
+  --light_blue: rgb(230, 242, 255);
+}
+
+.container {
+  margin: 80px 200px;
+  display: flex;
+}
+
+.layout__left,
+.layout__right {
+  width: 50%;
+}
+
+.layout__left {
+  background-color: var(--blue);
+  padding: 50px 0 50px 50px;
+}
+
+.left--child {
+  background-color: white;
+  padding: 50px 80px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.left__tittle h {
+  font-size: 50px;
+  color: var(--dark_blue);
+}
+
+.left__btn--gg {
+  text-align: center;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.logIn__ft--gg {
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+}
+
+.mail__tittle {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.mail__tittle span {
+  background: white;
+  font-size: 15px;
+  color: gray;
+  padding: 0 10px;
+}
+
+.left__mail {
+  margin: 30px 0;
+}
+
+.form__input--pass,
+.form__input--mail {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+
+.form__checkBox-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.forget__pass a {
+  color: var(--dark_blue);
+}
+
+.logIn__ft--mail {
+  width: 100%;
+  padding: 10px 0;
+  background-color: var(--dark_blue);
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+.layout__right {
+  background-color: var(--dark_blue);
+  padding: 50px 50px 50px 0px;
+}
+
+.right--child {
+  background-color: var(--light_blue);
+  padding: 50px 80px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+}
+
+.btn__logIn {
+  cursor: pointer;
+}
