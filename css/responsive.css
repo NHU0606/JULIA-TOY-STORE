@@ -140,7 +140,7 @@
 
 @media (max-width: 1240px){
     .no-product-img img{
-        width: 200px;
+        width: 400px;
     }
     .no-product-text h2:first-child {
         font-size: 2rem;

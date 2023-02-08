@@ -15,3 +15,8 @@
 .no-product-text span{
     color: rgb(230, 9, 101);
 }
+
+.no-product-img img{
+    width: 400px;
+    height: auto;
+}
