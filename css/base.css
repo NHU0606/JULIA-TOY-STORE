@@ -2,8 +2,9 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primary-color: rgb(230, 9, 101);
-    --primary-color-rgba: rgba(230, 9, 101, 0.8);
+    --primary-color: rgb(252, 0, 92);
+    --sub-color: rgb(255, 81, 159);
+    --primary-color-rgba: rgba(252, 0, 92, 0.8);
     --border-color: #dbdbdb;
     
     --header-height: 120px;

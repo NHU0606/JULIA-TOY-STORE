@@ -24,8 +24,8 @@ $(document).ready(function() {
         let carts = JSON.parse(localStorage.getItem('carts')) || []
         let cartBtn = document.getElementById('add-to-cart')
         let countCart = document.getElementById('count-cart')
-        let listCart = document.getElementById('list-card')
-        let seeCart = document.getElementById('see-cart')
+        let listCart = document.getElementById('list-cart')
+        // let seeCart = document.getElementById('see-cart')
 
         showCartList()
         
@@ -35,9 +35,9 @@ $(document).ready(function() {
             showCartList()
         })
             
-        seeCart.addEventListener('click', e => {
-            window.location.href = '?cart'
-        })
+        // seeCart.addEventListener('click', e => {
+        //     window.location.href = '?cart'
+        // })
 
         function showCartList() {
             countCart.textContent = carts.length

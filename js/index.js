@@ -3,18 +3,18 @@ $(document).ready(function() {
 
   let pathName = window.location.search;
   let check = pathName.includes("?id=")
-  let cart = pathName.includes("?cart")
+  let checkCart = pathName.includes("?cart")
 
 
   if(check) {
     $("#content").load(`pages/detail.html`);  
   }
-  else if (!cart) {
+  else if (!checkCart) {
     $("#menu").load(`pages/layout/menu.html`)
     $("#content").load(`pages/newViral.html`);  
   }
   
-  if (cart) {
+  if (checkCart) {
     $("#content").load(`pages/cart.html`);  
   }
 

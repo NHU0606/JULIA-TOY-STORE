@@ -1,9 +1,8 @@
 $(document).ready(function() {
     const seeCart = document.getElementById('see-cart_list')
+    let carts = JSON.parse(localStorage.getItem("carts")) || [];
 
-    fetch("../json/product.json")
-    .then(response => response.json())
-    .then(seeCartArr => {
+    
         let seeCartItem = ''
         seeCartArr.forEach(itemCart => {
             seeCartItem += `
@@ -31,5 +30,5 @@ $(document).ready(function() {
             `
         });
         seeCart.innerHTML = seeCartItem
-    })
+    
 })
