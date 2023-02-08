@@ -73,5 +73,12 @@
 }
 
 .menu-cart-list-name{
-    color: black;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide .row.sm-gutter .col {        
+        display: flex;
+    }
 }
