@@ -1,23 +1,22 @@
 $(document).ready(function() {
-    const mailInput = document.getElementById('email-input').value
-    const passInput = document.getElementById('pass-input').value
+    const mailInput = document.getElementById('email-input')
+    const passInput = document.getElementById('pass-input')
     const loginBtn = document.getElementById('login-btn')
+    
 
-    console.log(mailInput)
-
-    // fetch("../json/users.json")
-    // .then(respone => respone.json())
-    // .then(userJson => {
-    //     userJson.forEach(user => {
-    //         loginBtn.addEventListener('click', e =>{
-    //             if(mailInput === userJson.email && passInput === userJson.password) {
-    //                 alert(1233333333)
-    //             }
-    //             else {
-    //                 alert(4444444)
-    //             }
-    //         })
-    //     });
-    //     
-    // })
+    fetch("../json/users.json")
+    .then(response => response.json())
+    .then(newViralArray => {
+        newViralArray.forEach(item => {
+            loginBtn.addEventListener('click', e => {
+                if (mailInput.value === item.email && passInput.value === item.password) {
+                    window.location.href = "#"
+                } else if (mailInput.value === '') {
+                    alert('Press Email to login')
+                } else if (passInput.value === '') {
+                    alert('Press Password to login')
+                }
+            })
+        });
+    })
 })
