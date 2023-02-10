@@ -7,26 +7,27 @@ $(document).ready(function() {
     fetch("../json/users.json")
     .then(response => response.json())
     .then(loginArray => {
-        let user = JSON.parse(localStorage.getItem('user')) || []
 
         loginArray.forEach(item => {
             loginBtn.addEventListener('click', e => {
                 if (mailInput.value === item.email && passInput.value === item.password) {
-                    user.push(loginArray)
-                    localStorage.setItem('user', JSON.stringify(user))
-                    window.location.href = "pages/admin/dashboard.html#"
+                    localStorage.setItem('currentUser', JSON.stringify(storeUser(item)))
+                    window.location.reload();
                 } else if (mailInput.value === '') {
                     alert('Press Email to login')
                 } else if (passInput.value === '') {
                     alert('Press Password to login')
                 }
             })
-        });
-
-        if(user) {
-            window.location.href = "pages/admin/dashboard.html#"
-        } else {
-            window.location.href = "admin.html"
-        }
+        });        
     })
+
+    function storeUser(user) {
+        let _user = {}
+        _user['email'] = user.mail;
+        _user['id'] = user.id;
+        _user['role'] = user.role;
+        _user['name'] = user.name;
+        return _user;
+    }
 })

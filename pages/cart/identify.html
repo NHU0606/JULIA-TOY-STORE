@@ -1,0 +1,75 @@
+<div class="grid wide identify">
+  <div class="row sm-gutter identify-contain">
+    <div class="col l-12 m-12 c-12">
+      <div class="body__form--identify">
+        <div class="line__form1 layout--identify">
+          <div class="form__left itemmm">
+            <label for="identify-form-name" class="form-name">Name</label><br />
+            <input
+              type="text"
+              id="identify-form-name"
+              name="name"
+              required=""
+              class="form-input"
+            />
+          </div>
+          <div class="form__right itemmm">
+            <label for="identify-form-name" class="form-number">Phone Number</label
+            ><br />
+            <input
+              placeholder="(xxx) xxx-xxxx"
+              type="text"
+              id="identify-form-name"
+              name="name"
+              required=""
+              class="form-input"
+            />
+          </div>
+        </div>
+
+        <div class="line__form2">
+          <label for="identify-form-message" class="form-address"
+            >Your Address</label
+          ><br />
+          <textarea
+            rows="4"
+            cols="5"
+            name="message"
+            id="identify-form-message"
+            class="form-input--long"
+          ></textarea>
+        </div> 
+        
+        <button class="identify-btn-send btn btn--primary">SEND</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+    .grid.wide.identify{
+        background-color: white;
+    }
+
+    .row.sm-gutter.identify-contain{
+        padding: 20px 40px;
+    }
+
+    .layout--identify{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-address,
+    .form-number,
+    .form-name {
+        font-family: Inter, sans-serif;
+        color: rgb(143, 143, 143);
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+
+    .form__left{
+        margin-left: 0;
+    }
+</style>

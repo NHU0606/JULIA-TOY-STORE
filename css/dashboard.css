@@ -14,7 +14,22 @@
  body{
    min-height: 100vh;
  }
+
+ .introduce__web{
+   text-align: center;
+   margin-top: 40px;
+   
+ }
  
+.img-logo{
+   width: 100px;
+}
+
+.text-logo{
+   color: #fff;
+   font-size: 25px;
+}
+
  .side-bar{
    background: var(--dark-color);
    backdrop-filter:blur(15px);
@@ -34,7 +49,7 @@
  
  .side-bar .menu{
    width: 100%;
-   margin-top: 80px;
+   margin-top: 20px;
  }
  
  .side-bar .menu .item{
@@ -60,14 +75,6 @@
  
  .side-bar .menu .item i{
    margin-right: 15px;
- }
- 
- .side-bar .menu .item a .dropdown{
- 
-   position: absolute;
-   right:0;
-   margin: 20px;
-   transition: 0.3s ease;
  }
  
  .side-bar .menu .item .sub-menu{

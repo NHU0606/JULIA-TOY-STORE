@@ -1035,6 +1035,12 @@
 .grid_list_product{
     margin-left: -12px;
     justify-content: space-between;
+    display: flex;
+}
+
+.home-product {    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home-filter__page-icon{
@@ -1088,7 +1094,6 @@
     /*cai doan duoi nay la lam dau ... cho name product hai hon 2 hang*/
     height: 3.6rem;
     overflow: hidden;
-    display: block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1182,7 +1187,7 @@
     
 }
 
-.home-product-item___sale-off-precent{
+.home-product-item___available-precent{
     color: red;
     font-weight: 600;
     font-size: 1.2rem;
@@ -1192,7 +1197,7 @@
     
 }
 
-.home-product-item___sale-off-label{
+.home-product-item___available-label{
     font-size: 1.3rem;
     line-height: 1.4rem;
     color: var(--white-color);

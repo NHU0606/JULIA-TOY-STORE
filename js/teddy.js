@@ -1,14 +1,13 @@
 $(document).ready(function() {
-    const newViral = document.getElementById('new-viral--form')
+    const listProduct = document.getElementById('grid_list_product')
 
     fetch("../json/product.json")
-    .then(response => response.json())
-    .then(newViralArray => {
-        let viralItem = ''
-        newViralArray.forEach(item => {
-            // console.log(item.category.include)
-            if(item.category.include === 'viral') {
-                viralItem += `
+    .then(respone => respone.json())
+    .then(listProductJson => {
+        let listProductHtml = ''
+        listProductJson.forEach(item => {
+            if(item.category.slug === 'teddy') {
+                listProductHtml += `
                 <div class="col l-3 m-6 c-6 newviral--item">
                     <a class="home-product-item" href="?id=${item.id}">
                         <div class="home-product-item__img"
@@ -27,8 +26,8 @@ $(document).ready(function() {
                 </div>
                 `
             }
-            
+            listProduct.innerHTML = listProductHtml
+             
         });
-        newViral.innerHTML = viralItem
     })
 })

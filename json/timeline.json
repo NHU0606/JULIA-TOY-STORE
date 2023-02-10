@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "text": "All Products",
+        "slug": "cartProducts"
+    },
+    {
+        "id": 2,
+        "text": "Identify Information",
+        "slug": "identify"
+    },
+    {
+        "id": 3,
+        "text": "Payment",
+        "slug": "payment"
+    }
+]
