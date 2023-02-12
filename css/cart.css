@@ -250,3 +250,21 @@
 .list_cart-content-active {
   display: block;
 }
+
+.btn-quantity{
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.product-quanlity-number{
+  /* font-size: 15px; */
+}
+
+.col.l-8.m-6.c-12.cart-item-rigth{
+  align-items: center;
+}
+
+.col.l-2.cart_quanlity-number{
+  line-height: 0.2;
+}

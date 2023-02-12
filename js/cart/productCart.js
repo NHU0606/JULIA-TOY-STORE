@@ -26,13 +26,17 @@ $(document).ready(function () {
                     <div class="col l-2 cart_cost-pt">
                         <span class="cart_costNew">${itemCart.new_cost}</span>
                     </div>
-                    <div class="col l-2 cart_quanlity-number">
-                        <i id="minus-quantity" class="fa-solid fa-minus"></i>      
-                        <input type="text" id="product-quanlity-number" class="product-quanlity" value="1">                  
-                        <i id="plus-quantity" class="fa-solid fa-plus "></i>
+                    <div class="col l-2 cart_quanlity-number">    
+                        <button class="btn-quantity">
+                            <i id="minus-quantity" class="fa-solid fa-minus"></i>  
+                        </button>            
+                        <p class="product-quanlity-number"></p>
+                        <button class="btn-quantity">
+                            <i id="plus-quantity" class="fa-solid fa-plus "></i>
+                        </button>                 
                     </div>
                     <div class="col l-2 cart_totalCost">
-                        <span class="cart-totalCost">Total Cost</span>
+                        <span class="cart-totalCost"></span>
                     </div>
                     <div class="col l-2 cart_del-pt">
                         <span class="cart_delete">Delete</span>                                                         
@@ -44,16 +48,41 @@ $(document).ready(function () {
   seeCart.innerHTML = seeCartItem;
 
   //   Quantity
-  const valueCount = 1;
-  const plusQuantity = document.getElementById("plus-quantity");
-  const numberQuantity = document.getElementById("product-quanlity-number");
-  const minus = document.getElementById("minus-quantity");
+  var valueCount = 1;
+  const plusQuantity = document.querySelector("#plus-quantity");
+  const numberQuantity = document.querySelector(".product-quanlity-number");
+  const minusQuantity = document.querySelector("#minus-quantity");
+
+  displayNumber();
+
+  minusQuantity.addEventListener("click", () => {
+    valueCount--;
+    displayNumber();
+  });
 
   plusQuantity.addEventListener("click", () => {
-    let plus = valueCount++;
-    console.log("click";)
-
-    numberQuantity.value = plus;
-    // numberQuantity = numberQuantity +1;
+    valueCount++;
+    displayNumber();
   });
+
+  if(valueCount < 1) {
+    
+  }
+
+  function displayNumber() {
+    // lay gia tri noi can in ra html,
+    const totalCost = document.querySelector(".cart-totalCost");
+    // tinh tong so tien
+    var totalCostValue =
+      valueCount * Number.parseInt(carts[0].new_cost.replaceAll(".", ""));
+    // carts[0].new_cost.replaceAll(".", "") => 1.500.000 => "1500000"
+    // Number.parseInt("1500000") => 1500000
+
+    // so luong san pham
+    numberQuantity.innerHTML = valueCount;
+    // tong tine san pham
+    totalCost.innerHTML = totalCostValue;
+  }
+
+  
 });

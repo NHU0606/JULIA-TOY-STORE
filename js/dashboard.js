@@ -17,3 +17,8 @@
 //     });
 // 
 //   });
+
+
+$(document).ready(function() {
+    $("#container").load(`pages/`)
+})

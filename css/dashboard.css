@@ -106,8 +106,28 @@
   cursor: pointer;
 }
 
+/* dashboard menu product  */
+
+.dashboard-container{
+  margin: 40px 0;
+}
+
+.dashboard-products-list{
+  display: flex;
+  justify-content: space-between;
+}
+
 .dashboard-products-item{
   color: black;
   z-index: 99;
-  position: absolute;
+  background-color: var(--dark-color);
+  padding: 30px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dashboard-products-item:hover{
+  background-color: var(--light-pink);
+  transition: 0.5s;
+  color: var(--dark-color);
 }
