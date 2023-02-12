@@ -4,7 +4,6 @@ $(document).ready(function () {
   var dot = document.querySelectorAll(".dot");
 
   function changeSlide() {
-
     if (index < 0) {
       index = slides.length - 1;
     }
@@ -24,8 +23,7 @@ $(document).ready(function () {
     index++;
 
     setTimeout(changeSlide, 5000);
-
   }
 
   changeSlide();
-})
+});

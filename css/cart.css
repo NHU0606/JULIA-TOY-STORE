@@ -89,10 +89,14 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .product-quanlity {
   font-size: 13px;
+  outline: none;
+  border: none;
+  width: 10px;
 }
 
 .cart_cost-pt,
@@ -220,7 +224,6 @@
 .timeline-title > .timeline-title-item-active {
   color: var(--primary-color);
   border-bottom: 5px solid var(--primary-color);
-
 }
 
 .timeline-title .timeline-line {
@@ -240,10 +243,10 @@
   transition: 1s;
 }
 
-.list_cart-content{
-    display: none;
+.list_cart-content {
+  display: none;
 }
 
-.list_cart-content-active{
-    display: block;
+.list_cart-content-active {
+  display: block;
 }

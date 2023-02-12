@@ -1,14 +1,14 @@
-$(document).ready(function() {
-    const newViral = document.getElementById('new-viral--form')
+$(document).ready(function () {
+  const newViral = document.getElementById("new-viral--form");
 
-    fetch("../json/product.json")
-    .then(response => response.json())
-    .then(newViralArray => {
-        let viralItem = ''
-        newViralArray.forEach(item => {
-            // console.log(item.category.include)
-            if(item.category.include === 'viral') {
-                viralItem += `
+  fetch("../json/product.json")
+    .then((response) => response.json())
+    .then((newViralArray) => {
+      let viralItem = "";
+      newViralArray.forEach((item) => {
+        // console.log(item.category.include)
+        if (item.category.include === "viral") {
+          viralItem += `
                 <div class="col l-3 m-6 c-6 newviral--item">
                     <a class="home-product-item" href="?id=${item.id}">
                         <div class="home-product-item__img"
@@ -25,10 +25,9 @@ $(document).ready(function() {
                         </div>
                     </a>
                 </div>
-                `
-            }
-            
-        });
-        newViral.innerHTML = viralItem
-    })
-})
+                `;
+        }
+      });
+      newViral.innerHTML = viralItem;
+    });
+});

@@ -27,9 +27,9 @@ $(document).ready(function () {
                         <span class="cart_costNew">${itemCart.new_cost}</span>
                     </div>
                     <div class="col l-2 cart_quanlity-number">
-                        <i class="fa-solid fa-minus"></i>
-                        <span class="product-quanlity">1</span>
-                        <i class="fa-solid fa-plus"></i>
+                        <i id="minus-quantity" class="fa-solid fa-minus"></i>      
+                        <input type="text" id="product-quanlity-number" class="product-quanlity" value="1">                  
+                        <i id="plus-quantity" class="fa-solid fa-plus "></i>
                     </div>
                     <div class="col l-2 cart_totalCost">
                         <span class="cart-totalCost">Total Cost</span>
@@ -42,4 +42,18 @@ $(document).ready(function () {
             `;
   });
   seeCart.innerHTML = seeCartItem;
+
+  //   Quantity
+  const valueCount = 1;
+  const plusQuantity = document.getElementById("plus-quantity");
+  const numberQuantity = document.getElementById("product-quanlity-number");
+  const minus = document.getElementById("minus-quantity");
+
+  plusQuantity.addEventListener("click", () => {
+    let plus = valueCount++;
+    console.log("click";)
+
+    numberQuantity.value = plus;
+    // numberQuantity = numberQuantity +1;
+  });
 });

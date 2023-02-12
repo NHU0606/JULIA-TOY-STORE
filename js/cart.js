@@ -1,35 +1,35 @@
 $(document).ready(function () {
-    let carts = JSON.parse(localStorage.getItem("carts")) || [];
-    let countCart = document.getElementById("count-cart");
-    let listCart = document.getElementById("list-cart");
-    let seeCart = document.getElementById("see-cart");
-  
+  let carts = JSON.parse(localStorage.getItem("carts")) || [];
+  let countCart = document.getElementById("count-cart");
+  let listCart = document.getElementById("list-cart");
+  let seeCart = document.getElementById("see-cart");
+
+  showCartList();
+
+  let pathName = window.location.search;
+
+  let deleteId = pathName.replace(/^\D+/g, "");
+  if (deleteId) {
+    setCart();
+  }
+
+  seeCart.addEventListener("click", function (e) {
+    window.location.href = "?cart";
+  });
+
+  // -------------------------- Function -------------------
+  function setCart() {
+    let setcarts = carts.filter((e) => e.id !== parseInt(deleteId));
+    localStorage.setItem("carts", JSON.stringify(setcarts));
     showCartList();
-  
-    let pathName = window.location.search;
-  
-    let deleteId = pathName.replace(/^\D+/g, '');
-    if (deleteId) {
-      setCart();
-    }
-  
-    seeCart.addEventListener('click', function (e) {
-      window.location.href = "?cart";
-    })
-  
-    // -------------------------- Function -------------------
-    function setCart() {
-      let setcarts = carts.filter((e) => e.id !== parseInt(deleteId))
-      localStorage.setItem('carts', JSON.stringify(setcarts));
-      showCartList();
-    }
-  
-    function showCartList() {
-      carts = JSON.parse(localStorage.getItem("carts")) || [];
-      countCart.textContent = carts.length;
-      let listCartHTML = '';
-      carts.forEach(element => {
-        listCartHTML += `
+  }
+
+  function showCartList() {
+    carts = JSON.parse(localStorage.getItem("carts")) || [];
+    countCart.textContent = carts.length;
+    let listCartHTML = "";
+    carts.forEach((element) => {
+      listCartHTML += `
             <li class="header__cart-item">
               <img class="header__cart-img"
                 src="${element.image}" alt="">
@@ -48,8 +48,8 @@ $(document).ready(function () {
                 </div>
               </div>
             </li>
-          `
-      });
-      listCart.innerHTML = listCartHTML;
-    }
-  })
+          `;
+    });
+    listCart.innerHTML = listCartHTML;
+  }
+});
