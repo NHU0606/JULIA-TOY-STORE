@@ -70,17 +70,11 @@ $(document).ready(function () {
   }
 
   function displayNumber() {
-    // lay gia tri noi can in ra html,
     const totalCost = document.querySelector(".cart-totalCost");
-    // tinh tong so tien
     var totalCostValue =
       valueCount * Number.parseInt(carts[0].new_cost.replaceAll(".", ""));
-    // carts[0].new_cost.replaceAll(".", "") => 1.500.000 => "1500000"
-    // Number.parseInt("1500000") => 1500000
 
-    // so luong san pham
     numberQuantity.innerHTML = valueCount;
-    // tong tine san pham
     totalCost.innerHTML = totalCostValue;
   }
 
