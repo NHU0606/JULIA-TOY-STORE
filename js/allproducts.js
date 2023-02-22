@@ -1,14 +1,13 @@
-$(document).ready(function () {
-  const listProduct = document.getElementById("grid_list_product");
+$(document).ready(function() {
+    const product = document.getElementById('grid_list_product')
 
-  fetch("../json/product.json")
-    .then((respone) => respone.json())
-    .then((listProductJson) => {
-      let listProductHtml = "";
-      listProductJson.forEach((item) => {
-        if (item.category.slug === "teddy") {
-          listProductHtml += `
-                <div class="col l-3 m-6 c-6 newviral--item">
+    fetch(`../json/product.json`)
+    .then(respone =>respone.json())
+    .then((productJson) => {
+        let productItem = ''
+        productJson.forEach(item => {
+            productItem += `
+            <div class="col l-3 m-6 c-6 newviral--item">
                     <a class="home-product-item" href="?id=${item.id}">
                         <div class="home-product-item__img"
                             style="background-image: url(${item.image});">
@@ -24,9 +23,8 @@ $(document).ready(function () {
                         </div>
                     </a>
                 </div>
-                `;
-        }
-        listProduct.innerHTML = listProductHtml;
-      });
-    });
-});
+            `
+        });
+        product.innerHTML = productItem
+    })
+})

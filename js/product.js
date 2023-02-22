@@ -16,8 +16,8 @@ $(document).ready(function () {
                         </div>
                         <h4 class="home-product-item__name">${item.name}</h4>
                         <div class="home-product-item__price">
-                            <span class="home-product-item__price-old">${item.old_cost}</span>
-                            <span class="home-product-item__price-current">${item.new_cost}</span>
+                            <span class="home-product-item__price-old">$${item.old_cost}</span>
+                            <span class="home-product-item__price-current">$${item.new_cost}</span>
                         </div>
                         <div class="home-product-item___sale-off">
                             <span class="home-product-item___available-precent">${item.category.available}</span>

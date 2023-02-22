@@ -49,7 +49,6 @@ $(document).ready(function() {
                 checkSlug = item.getAttribute('data-slug')
                 loadData(checkSlug)
                 removeActive(checkSlug)
-                console.log(checkSlug-)
             }
         })
 
@@ -84,4 +83,15 @@ $(document).ready(function() {
         }
 
     })
+
+    //LOG OUT
+    const btnLogOut = document.getElementById('form-btn-logout')
+    
+    btnLogOut.addEventListener('click', e => {
+        localStorage.clear()
+        window.location.reload();
+    })
+
+    // dropdown list products
+    
 })

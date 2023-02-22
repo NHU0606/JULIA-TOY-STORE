@@ -21,6 +21,58 @@ body{
   padding-top: 57px;
 }
 
+.dashboard-container{
+  margin: 40px 40px 0 290px;
+}
+
+.dashboard-products-item{
+  color: black;
+  z-index: 99;
+  background-color: var(--dark-color);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+}
+
+.dashboard-products-item:hover{
+  background-color: var(--light-pink);
+  transition: 0.5s;
+  color: var(--dark-color);
+}
+
+body{
+  background-color: white;
+  }
+  .home-product-item__img {
+    padding-top: 0;
+  }
+
+  .dashboard-container--products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col.l-10.m-12.c-12.dashboard-container--products {
+    padding: 0;
+  }
+
+  .dashboard-products-list-item{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .home-product-item__img{
+    width: 100%;
+    height: 200px;
+  }
+
+  .home-product-item{
+    border: 1px solid rgb(255, 209, 217);
+  }
+
+
 .text-logo{
   font-size: 23px;
   color: white;
@@ -60,7 +112,7 @@ body{
   text-decoration: none;
   display: block;
   padding: 5px 30px;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 .dashboard-menu-left .menu-list .list-item a:hover{
@@ -123,28 +175,168 @@ body{
 
 /* dashboard menu product  */
 
-.dashboard-container{
-  margin: 40px 40px 0 290px;
-}
 
-.dashboard-products-list{
+/* delete icon */
+
+
+.delete-form-icon{
+  color: var(--primary-color);
   display: flex;
-  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  transition: .5s linear;
+  z-index: 4;
+
 }
 
-.dashboard-products-item{
-  color: black;
-  z-index: 99;
-  background-color: var(--dark-color);
-  padding: 30px 40px;
-  border-radius: 10px;
+.delete-form-icon i {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  margin: 0 5px;
+  filter: blur(0);
   cursor: pointer;
-  font-size: 16px;
   color: white;
+  font-size: 20px;
 }
 
-.dashboard-products-item:hover{
-  background-color: var(--light-pink);
-  transition: 0.5s;
-  color: var(--dark-color);
+.home-product-item:hover .delete-form-icon {
+  transform: translate(-50%, -80px);
+  transition: .5s linear;
+  opacity: 1;
 }
+
+.home-product-item{
+  overflow: hidden;
+}
+
+.home-product-item__img{
+  filter: blur(0);
+}
+
+.home-product-item:hover .home-product-item__img{
+  filter: blur(2px);
+}
+
+.home-product-item:hover .home-product-item___sale-off{
+  filter: blur(2px);
+}
+
+.home-product-item:hover .home-product-item__price{
+  filter: blur(2px);
+}
+
+.home-product-item:hover .home-product-item__name{
+  filter: blur(2px);
+}
+
+/* logout btn  */
+
+.form-btn-logout{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 12px;
+}
+
+.btn--logout {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  color: var(--primary-color);
+  border-radius: 3px;
+}
+
+
+.btn--logout:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  color: rgb(177, 5, 100);
+  background-color: var(--pink);
+}
+
+  
+  .dropdown {
+      position: relative;
+      width: 200px;
+  }
+  
+  .dropdown * {
+      box-sizing: border-box;
+  }
+  
+  .dashboard-products-select {
+      background-color: var(--dark-color);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      line-height: 30px;
+      font-size: 15px;
+  }
+  
+  .select:hover {
+      background-color: var(--dark-pink);
+  
+  }
+  .caret {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #fff;
+      transition: 0.35;
+  }
+  
+  .menu {
+      list-style: none;
+      padding: 0.2em 0.5em;
+      background-color: var(--dark-color);
+      border: none;
+      outline: none;
+      box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.5);
+      border-radius: 0.5em;
+      color: #9fa5b5;
+      position: absolute;
+      top: 5em;
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%) ;
+      display: none;
+      transition: 0.2s;
+      z-index: 1;
+  }
+  
+  .product-dasboard-item {
+      padding: 0.7em 0.5em;
+      margin: 0.3em 0;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+  }
+  
+  .product-dasboard-item:hover {
+      background: var(--light-pink);
+      color: var(--dark-color);
+  }
+  
+  .product-dasboard-item-active {
+      background: var(--dark-pink);
+  }
+  
+  .menu-open {
+      display: block;
+      opacity: 1;
+  }

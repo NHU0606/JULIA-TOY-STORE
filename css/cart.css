@@ -109,6 +109,11 @@
   justify-content: center;
 }
 
+.totalCost{
+  font-size: 15px;
+  color: rgb(135, 135, 135);
+}
+
 /* list_cart-footer */
 .list_cart-footer {
   display: flex;

@@ -49,8 +49,8 @@ $(document).ready(function () {
                     <div class="header__cart-item-head">
                         <h5 class="header__cart-item-head-name">${itemCart.name}</h5>
                         <div class="header__cart-item-price-wrap">
-                            <span class="header__cart-item-priceOld">${itemCart.old_cost}</span>
-                            <span class="header__cart-item-price">${itemCart.new_cost}</span>
+                            <span class="header__cart-item-priceOld">$${itemCart.old_cost}</span>
+                            <span class="header__cart-item-price">$${itemCart.new_cost}</span>
                         </div>
                     </div>
 

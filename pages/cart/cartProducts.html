@@ -56,12 +56,17 @@
 
       <div class="list_cart-footer">
         <div class="col l-6 m-6 c-4 cart-footer-left">
-          <label for="checkbox1" class="check-product-form">
-            <input id="footer-check-product" type="checkbox" role="checkbox" />
+
+        <div class="form-group select-all check-product-form">
+          <input type="checkbox" id="select-all">
+          <label for="select-all" class="footer-chooseAll-title">
+            <span class="checkbox">
+              <span class="check"></span>
+            </span>
+            Choose All
           </label>
-          <div>
-            <span class="footer-chooseAll-title">Choose All</span>
-          </div>
+        </div>
+          
         </div>
         <div class="col l-6 m-6 c-8 cart-footer-rigth">
           <div class="footer-total-cost-title">Total</div>
@@ -75,5 +80,3 @@
 </div>
 
 <script src="/js/cart/productCart.js"></script>
-
-<p class="product-quanlity-number"></p>

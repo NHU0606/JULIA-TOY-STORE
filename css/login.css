@@ -10,9 +10,9 @@
   --light-pink: #ffecf6;
 }
 
-body {
+.contain-form-login {
+  padding: 58px 0;
   background-image: linear-gradient(#a084dc, #ebc7e6);
-  margin: 57px 0;
 }
 
 .container {
