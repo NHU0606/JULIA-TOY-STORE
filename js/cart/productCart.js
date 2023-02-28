@@ -10,7 +10,7 @@ $(document).ready(function () {
             <li class="cart_item">
                 <div class="col l-4 m-6 c-12 cart-item-left" style=" display: flex;">
                     <label for="checkbox1" class="check-product-form form-group">
-                        <input id="check-product" type="checkbox" name="checkbox-name" role="checkbox"/>
+                        <input data-checked="false" data-quanlity="1" data-total-cost="${itemCart.new_cost}" class="checkbox" id="check-product" type="checkbox" name="checkbox-name" role="checkbox">
                     </label>
                     <div class="cart_img-pt">
                         <img class="cart_img" src="${
@@ -32,12 +32,18 @@ $(document).ready(function () {
                           itemCart.new_cost
                         )}</span>
                     </div>
-                    <div class="col l-2 cart_quanlity-number" data-new-cost="${itemCart.new_cost}">    
-                        <button class="btn-quantity minus" data-minus="${itemCart.id}">
+                    <div class="col l-2 cart_quanlity-number" data-new-cost="${
+                      itemCart.new_cost
+                    }">    
+                        <button class="btn-quantity minus" data-minus="${
+                          itemCart.id
+                        }">
                             <i id="minus-quantity" class="fa-solid fa-minus"></i>  
                         </button>            
                         <p class="product-quanlity-number">1</p>
-                        <button class="btn-quantity plus" data-plus="${itemCart.id}">
+                        <button class="btn-quantity plus" data-plus="${
+                          itemCart.id
+                        }">
                             <i id="plus-quantity" class="fa-solid fa-plus "></i>
                         </button>                 
                     </div>
@@ -54,88 +60,209 @@ $(document).ready(function () {
             `;
 
     seeCart.innerHTML = seeCartItem;
-});
+  });
 
-    //   Quantity
+  //   Quantity
+  let count = 0;
+  let countActive = 0
+  let countCost = 0
+  // displayNumber(itemCart);
+  $(".minus").click(function (e) {
+    freshQuanlityCost();
 
-    let valueCount = 1;
-    // displayNumber(itemCart);
-    $(".minus").click(function(e) {
-        if (valueCount === 1) {
-          alert(
-            `Total quantity must equal 1. Do u wanna delete this??? (Plzz click on Delete button)`
-          );
-          return;
-        }
-        valueCount--;
-        $(this).siblings(".product-quanlity-number").text(valueCount);
-        
-        let quanlityNumber = document.querySelector(".product-quanlity-number").innerText;
-        $(this).parent().siblings(".cart_quanlity-number").children(".product-quanlity-number").text(quanlityNumber)
-        console.log(quanlityNumber)
-        
+    let quanlityNumber = $(this).siblings(".product-quanlity-number").text();
 
-
-        let cost = $(this).parent().data('new-cost');
-        $(this).parent().siblings(".cart_totalCost").children(".totalCost").text(formatNumber(valueCount * cost))
-    });
-
-    $(".plus").click(function(e) {          
-        // element.text() -> 1
-        valueCount++;
-        $(this).siblings(".product-quanlity-number").text(valueCount);
-
-        let quanlityNumber = document.querySelector(".product-quanlity-number").innerText;
-        $(this).parent().siblings(".cart_quanlity-number").children(".product-quanlity-number").text(quanlityNumber)
-        console.log(quanlityNumber)
-
-        let cost = $(this).parent().data('new-cost');
-        $(this).parent().siblings(".cart_totalCost").children(".totalCost").text(formatNumber(valueCount * cost))
-    });
-    
-    // format number
-    function formatNumber(number) {
-      return (
-        "$" +
-        number.toLocaleString(
-          "en-US",
-          { minimumFractionDigits: 0 },
-          { style: "currency", currency: "USD" }
-        )
+    if (quanlityNumber === "1") {
+      alert(
+        `Total quantity must equal 1. Do u wanna delete this??? (Plzz click on Delete button)`
       );
+      return;
     }
+    quanlityNumber--;
+    $(this).siblings(".product-quanlity-number").text(quanlityNumber);
 
-    // check box choose all
-    const selectAll = document.querySelector(
-      ".form-group.select-all.check-product-form input"
-    );
-    const allCheckBox = document.querySelectorAll(
-      ".check-product-form.form-group:not(.select-all) input"
-    );
-    let listBoolean = [];
+    $(this)
+      .parent()
+      .siblings(".cart_quanlity-number")
+      .children(".product-quanlity-number")
+      .text(quanlityNumber);
 
-    allCheckBox.forEach((item) => {
-      item.addEventListener("change", (e) => {
-        allCheckBox.forEach((i) => {
-          listBoolean.push(i.checked);
-        });
-        if (listBoolean.includes(false)) {
-          selectAll.checked = false;
-        } else {
-          selectAll.checked = true;
-        }
-        listBoolean = [];
-      });
-    });
-    selectAll.addEventListener("change", (e) => {
-      if (selectAll.checked) {
-        allCheckBox.forEach((i) => {
-          i.checked = true;
-        });
-      } else {
-        allCheckBox.forEach((i) => {
-          i.checked = false;
-        });
+    let cost = $(this).parent().data("new-cost");
+    $(this)
+      .parent()
+      .siblings(".cart_totalCost")
+      .children(".totalCost")
+      .text(formatNumber(quanlityNumber * cost));
+    $(this)
+      .parent()
+      .parent()
+      .siblings(".cart-item-left")
+      .children(".check-product-form")
+      .children(".checkbox")
+      .attr("data-quanlity", quanlityNumber);
+    $(this)
+      .parent()
+      .parent()
+      .siblings(".cart-item-left")
+      .children(".check-product-form")
+      .children(".checkbox")
+      .attr("data-total-cost", quanlityNumber * cost);
+  });
+
+  $(".plus").click(function (e) {
+    let quanlityNumber = $(this).siblings(".product-quanlity-number").text();
+
+    quanlityNumber++;
+    $(this).siblings(".product-quanlity-number").text(quanlityNumber);
+
+    $(this)
+      .parent()
+      .siblings(".cart_quanlity-number")
+      .children(".product-quanlity-number")
+      .text(quanlityNumber);
+
+    let cost = $(this).parent().data("new-cost");
+    $(this)
+      .parent()
+      .siblings(".cart_totalCost")
+      .children(".totalCost")
+      .text(formatNumber(quanlityNumber * cost));
+    $(this)
+      .parent()
+      .parent()
+      .siblings(".cart-item-left")
+      .children(".check-product-form")
+      .children(".checkbox")
+      .attr("data-quanlity", quanlityNumber);
+    $(this)
+      .parent()
+      .parent()
+      .siblings(".cart-item-left")
+      .children(".check-product-form")
+      .children(".checkbox")
+      .attr("data-total-cost", quanlityNumber * cost);
+    // i
+    $(this)
+      .parent()
+      .parent()
+      .siblings(".cart-item-left")
+      .children(".check-product-form")
+      .children(".checkbox")
+      .attr("data-checked", false)
+  });
+
+  // format number
+  function formatNumber(number) {
+    return (
+      "$" +
+      number.toLocaleString(
+        "en-US",
+        { minimumFractionDigits: 0 },
+        { style: "currency", currency: "USD" }
+      )
+    );
+  }
+
+  // check box choose all
+
+  const selectAll = document.querySelector(
+    ".form-group.select-all.check-product-form input"
+  );
+  const allCheckBox = document.querySelectorAll(
+    ".check-product-form.form-group:not(.select-all) input"
+  );
+
+
+  allCheckBox.forEach((item) => {
+    item.addEventListener("change", (e) => {
+      freshQuanlityCost(item);
+
+      let quanlityNumber = item.getAttribute("data-quanlity");
+      let totalCostNumber = item.getAttribute("data-total-cost");
+
+      if (item.checked) {
+        count++;
+        
+        countActive += parseInt(quanlityNumber);
+        countCost += parseInt(totalCostNumber);
+      } else if (!item.checked){
+        count--;
+        countActive -= parseInt(quanlityNumber);
+        countCost -= parseInt(totalCostNumber);
       }
+      
+
+      if (count === carts.length) {
+        selectAll.checked = true;
+      } else {
+        selectAll.checked = false;
+      }
+
     });
+  });
+  
+  const buyBtn = document.getElementById("buy-btn")
+  const timeLine = document.querySelector(".timeline-line")
+
+  selectAll.addEventListener("change", (e) => {
+    freshQuanlityCost();
+    $("#buy-btn").removeAttr("disabled") 
+    buyBtn.addEventListener("click", () => {
+      timeLine.classList.add("timeline-line-half")
+      $(".content").load(`pages/cart/identify.html`)
+    })
+  });
+
+   //checkbox choose all
+   
+
+  function freshQuanlityCost() {
+    let selectAllQuanlity = 0;
+    let selectAllCost = 0;
+
+    if(!selectAll.checked) {
+      count = 0;
+      allCheckBox.forEach((i) => {
+        i.checked = false;
+      });
+    }
+    if (selectAll.checked) {
+      allCheckBox.forEach((i) => {
+        i.checked = true;
+        selectAllQuanlity += parseInt(i.getAttribute("data-quanlity"));
+        selectAllCost += parseInt(i.getAttribute("data-total-cost"));
+      });
+    } 
+
+    const sumProduct = document.getElementById('footer-total-product')
+    const sumCost = document.getElementById('footer-total-cost')
+
+    sumProduct.innerHTML = selectAllQuanlity + " Products"
+    sumCost.innerHTML = formatNumber(selectAllCost)
+
+//check for item
+//     let checkBoxQuanlity = 0;
+//     let checkBoxCost = 0;
+// 
+//     if (item.checked) {
+//       item.checked = true;
+//       
+//       checkBoxQuanlity += parseInt(item.getAttribute("data-quanlity"))
+//       checkBoxCost += parseInt(item.getAttribute("data-total-cost"))
+//     } else if (!item.checked){
+//       item.checked = false;
+//     }
+//     
+//     sumProduct.innerHTML = checkBoxQuanlity + " Products"
+//     sumCost.innerHTML = formatNumber(checkBoxCost)
+  
+
+
+
+}
+// Buy now
+
+  
+
+
 });

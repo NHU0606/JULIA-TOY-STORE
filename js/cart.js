@@ -17,6 +17,8 @@ $(document).ready(function () {
     window.location.href = "?cart";
   });
 
+
+
   // -------------------------- Function -------------------
   function setCart() {
     let setcarts = carts.filter((e) => e.id !== parseInt(deleteId));
