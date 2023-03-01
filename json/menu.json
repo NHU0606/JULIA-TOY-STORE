@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "text": "All Products",
+        "slug": "allproducts"
+    },{
+        "id": 2,
+        "text": "Dolls",
+        "slug": "dolls"
+    },
+    {
+        "id": 3,
+        "text": "Teddy Bear",
+        "slug": "teddy"
+    },
+    {
+        "id": 4,
+        "text": "Lego",
+        "slug": "lego"
+    },
+    {
+        "id": 5,
+        "text": "Puzzle",
+        "slug": "puzzle"
+    },
+    {
+        "id": 6,
+        "text": "Car",
+        "slug": "car"
+    }
+]

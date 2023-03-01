@@ -1,12 +1,33 @@
-.connect__form-ok{
-    background-color: white;
-    text-align: center;
+.connect__form-ok {
+  background-color: white;
+  text-align: center;
+  height: 500px;
+  align-items: center;
 }
 
-.connectok--text h2{
-    font-weight: 600;
-    color:#313131;
-    font-size: 40px;
-    -webkit-animation:colorchangeText 20s infinite alternate;    
-    
+.connectok--text h2 {
+  font-weight: 600;
+  color: #313131;
+  font-size: 40px;
+  -webkit-animation: colorchangeText 20s infinite alternate;
+}
+
+.connectok--img img {
+  width: 400px;
+  height: auto;
+}
+
+@media (max-width: 1023px) {
+  .connectok--text h2 {
+    line-height: 1.1;
+    font-size: 30px;
   }
+}
+@media (max-width: 600px) {
+  .connectok--text h2 {
+    font-size: 25px;
+  }
+  img {
+    width: 300px;
+  }
+}

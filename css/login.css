@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-pink: #ff8fb1;
+  --pink: #ffc6d3;
+  --light-pink: #ffecf6;
+}
+
+.contain-form-login {
+  padding: 58px 0;
+  background-image: linear-gradient(#a084dc, #ebc7e6);
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  /* margin-top: 50px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 20px;
+}
+
+.img-logo {
+  width: 100px;
+  height: auto;
+}
+
+.layout__left {
+  background-color: var(--dark-pink);
+  padding: 50px 0 50px 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.layout__right {
+  background-color: var(--pink);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.col.l-6.m-6.c-6.layout__left {
+  padding: 50px 0 50px 50px;
+  height: 100%;
+}
+
+.left--child {
+  background-color: white;
+  padding: 50px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.left__tittle h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  line-height: 2;
+}
+
+.left__mail {
+  margin-top: 20px;
+}
+
+.mail__tittle {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.mail__tittle span {
+  background: white;
+  font-size: 15px;
+  color: gray;
+  padding: 0 10px;
+}
+
+.form__input--pass,
+.form__input--mail {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  padding: 10px;
+  outline: none;
+  width: 100%;
+}
+
+.logIn__ft--mail {
+  width: 100%;
+  font-size: 20px;
+}
+
+.btn.btn--primary {
+  font-size: 15px;
+}
+
+.img-login {
+  margin: 60px auto;
+}

@@ -1,0 +1,121 @@
+<div class="grid wide identify">
+  <div class="row sm-gutter identify-contain">
+    <div class="col l-12 m-12 c-12">
+      <div class="confirm-address">
+        <h1 class="confirm-address-title">
+          <i class="fa-solid fa-location-dot"></i>Delivery Address
+        </h1>        
+        <div class="confirm-user">
+          <div id="confirm-user-name"></div>
+          <div id="confirm-user-phone"></div>
+          <div id="confirm-user-address"></div>
+        </div>
+      </div>
+
+      <div class="confirm-products">
+       
+        <div class="detail-payment">
+            <div class="col l-6 detail-payment-left">
+                <img src="/img/payment.png" alt="" class="detail-payment-left-img">
+            </div>
+            <div class="col l-6 detail-payment-right">
+                <h1 class="detail-payment-title">Detail Payment</h1>
+                <div class="detail-total-cost">
+                    <div class="total-product-text">Total of products:</div>
+                    <div id="total-product-number" class="total-cost-number"></div>
+                </div>                
+                <div class="detail-total-payment">
+                    <div class="total-total-text">Total payment:</div>
+                    <div id="total-total-number" class="total-total-number"></div>
+                </div>
+
+                <button class="payment-btn-send btn btn--primary">BUY NOW</button>
+            </div>            
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/cart/payment.js"></script>
+
+<style>
+  .confirm-products-title {
+    display: flex;
+    background-color: white;
+    padding: 20px 40px;
+  }
+
+  .cart_quanlity-number {
+    border: none;
+  }
+
+  .confirm-address{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px 40px;
+  }
+
+  .confirm-address-title{
+    color: var(--primary-color);
+  }
+
+  .confirm-address-title i{
+    padding-right: 10px;
+  }
+
+  .confirm-user{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+.confirm-products-title{
+    border-bottom: 1px solid rgb(221, 221, 221);
+
+}
+.cart_list,
+.cart_item{
+    margin: 0;
+}
+  #confirm-user-address,
+  #confirm-user-phone,
+  #confirm-user-name{
+    font-size: 15px;
+    color: rgb(135, 135, 135);
+  }
+
+  .detail-payment{
+    display: flex;    
+  }
+
+  .col.l-6.detail-payment-right{
+    background-color: white;
+    padding: 40px;
+}
+
+  .detail-total-deli,
+  .detail-total-payment,
+  .detail-total-cost{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: rgb(47, 47, 47);
+    line-height: 3;
+  }
+
+  .detail-payment-title{
+    color: var(--primary-color);
+  }
+  
+  .payment-btn-send{
+    margin-top: 30px;
+    float: right;
+  }
+
+  .detail-payment-left-img{
+    display: flex;
+    margin: 0 auto;
+  }
+</style>
