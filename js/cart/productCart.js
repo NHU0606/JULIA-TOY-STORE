@@ -203,11 +203,13 @@ $(document).ready(function () {
   
   const buyBtn = document.getElementById("buy-btn")
   const timeLine = document.querySelector(".timeline-line")
+  const circle = document.querySelector(".circle-check")
 
   selectAll.addEventListener("change", (e) => {
     freshQuanlityCost();
     $("#buy-btn").removeAttr("disabled") 
     buyBtn.addEventListener("click", () => {
+      circle.classList.add("circle-check-active")
       timeLine.classList.add("timeline-line-half")
       $(".content").load(`pages/cart/identify.html`)
     })
