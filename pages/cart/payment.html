@@ -6,71 +6,14 @@
           <i class="fa-solid fa-location-dot"></i>Delivery Address
         </h1>        
         <div class="confirm-user">
-          <div class="confirm-user-name">Name: Julia</div>
-          <div class="confirm-user-phone">Phone: 02444242</div>
-          <div class="confirm-user-address"> Address:
-            i dont know where my address, Where do you want to deliver you do it
-          </div>
+          <div id="confirm-user-name"></div>
+          <div id="confirm-user-phone"></div>
+          <div id="confirm-user-address"></div>
         </div>
       </div>
 
       <div class="confirm-products">
-        <div class="confirm-products-title">
-          <div class="col l-4 m-6 c-6 cart-item-left-title">
-            <span class="menu-cart-list menu-cart-list-name">Product</span>
-          </div>
-          <div class="col l-8 m-6 c-6 cart-item-rigth-title">
-            <div class="col l-2 cart_typeOf-pt">
-              <span class="menu-cart-list-type">Type of</span>
-            </div>
-            <div class="col l-2 cart_cost-pt">
-              <span class="menu-cart-list-cost">Cost</span>
-            </div>
-            <div class="col l-2 cart_quanlity">
-              <span class="menu-cart-list-quanlity">Quantity</span>
-            </div>
-            <div class="col l-2 cart_totalCost">
-              <span class="menu-cart-list-totalCost">Total Cost</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="list_cart">
-          <ul id="see-cart_list" class="cart_list">
-            <li class="cart_item">
-              <div
-                class="col l-4 m-6 c-12 cart-item-left"
-                style="display: flex"
-              >
-                <div class="cart_img-pt">
-                  <img class="cart_img" src="" alt="" class="cart_img" />
-                </div>
-                <div class="cart_name-pt">
-                  <h2 class="cart_name">${itemCart.name}</h2>
-                </div>
-              </div>
-              <div
-                class="col l-8 m-6 c-12 cart-item-rigth"
-                style="display: flex"
-              >
-                <div class="col l-2 cart_typeOf-pt">
-                  <span class="cart_typeOf">${itemCart.category.text}</span>
-                </div>
-                <div class="col l-2 cart_cost-pt">
-                  <span class="cart_costNew">$${itemCart.new_cost}</span>
-                </div>
-                <div class="col l-2 cart_quanlity-number">
-                  <span class="product-quanlity">1</span>
-                </div>
-                <div class="col l-2 cart_totalCost">
-                  <span class="cart-totalCost">Total Cost</span>
-                </div>
-              </div>
-            </li>
-            
-          </ul>
-        </div>
-
+       
         <div class="detail-payment">
             <div class="col l-6 detail-payment-left">
                 <img src="/img/payment.png" alt="" class="detail-payment-left-img">
@@ -78,21 +21,18 @@
             <div class="col l-6 detail-payment-right">
                 <h1 class="detail-payment-title">Detail Payment</h1>
                 <div class="detail-total-cost">
-                    <div class="total-cost-text">Total of products:</div>
-                    <div class="total-cost-number">??????</div>
-                </div>
-                <div class="detail-total-deli">
-                    <div class="total-deli-text">Total shipping fee:</div>
-                    <div class="total-deli-number">??????</div>
-                </div>
+                    <div class="total-product-text">Total of products:</div>
+                    <div id="total-product-number" class="total-cost-number"></div>
+                </div>                
                 <div class="detail-total-payment">
-                    <div class="total-deli-text">Total payment:</div>
-                    <div class="total-deli-number">??????</div>
+                    <div class="total-total-text">Total payment:</div>
+                    <div id="total-total-number" class="total-total-number"></div>
                 </div>
 
                 <button class="payment-btn-send btn btn--primary">BUY NOW</button>
             </div>            
         </div>
+
       </div>
     </div>
   </div>
@@ -139,9 +79,9 @@
 .cart_item{
     margin: 0;
 }
-  .confirm-user-address,
-  .confirm-user-phone,
-  .confirm-user-name{
+  #confirm-user-address,
+  #confirm-user-phone,
+  #confirm-user-name{
     font-size: 15px;
     color: rgb(135, 135, 135);
   }

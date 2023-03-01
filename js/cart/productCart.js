@@ -10,7 +10,9 @@ $(document).ready(function () {
             <li class="cart_item">
                 <div class="col l-4 m-6 c-12 cart-item-left" style=" display: flex;">
                     <label for="checkbox1" class="check-product-form form-group">
-                        <input data-checked="false" data-quanlity="1" data-total-cost="${itemCart.new_cost}" class="checkbox" id="check-product" type="checkbox" name="checkbox-name" role="checkbox">
+                        <input data-checked="false" data-quanlity="1" data-total-cost="${
+                          itemCart.new_cost
+                        }" class="checkbox" id="check-product" type="checkbox" name="checkbox-name" role="checkbox">
                     </label>
                     <div class="cart_img-pt">
                         <img class="cart_img" src="${
@@ -64,8 +66,8 @@ $(document).ready(function () {
 
   //   Quantity
   let count = 0;
-  let countActive = 0
-  let countCost = 0
+  let countActive = 0;
+  let countCost = 0;
   // displayNumber(itemCart);
   $(".minus").click(function (e) {
     freshQuanlityCost();
@@ -148,7 +150,7 @@ $(document).ready(function () {
       .siblings(".cart-item-left")
       .children(".check-product-form")
       .children(".checkbox")
-      .attr("data-checked", false)
+      .attr("data-checked", false);
   });
 
   // format number
@@ -172,7 +174,6 @@ $(document).ready(function () {
     ".check-product-form.form-group:not(.select-all) input"
   );
 
-
   allCheckBox.forEach((item) => {
     item.addEventListener("change", (e) => {
       freshQuanlityCost(item);
@@ -182,47 +183,55 @@ $(document).ready(function () {
 
       if (item.checked) {
         count++;
-        
+
         countActive += parseInt(quanlityNumber);
         countCost += parseInt(totalCostNumber);
-      } else if (!item.checked){
+      } else if (!item.checked) {
         count--;
         countActive -= parseInt(quanlityNumber);
         countCost -= parseInt(totalCostNumber);
       }
-      
 
       if (count === carts.length) {
         selectAll.checked = true;
       } else {
         selectAll.checked = false;
       }
-
     });
   });
-  
-  const buyBtn = document.getElementById("buy-btn")
-  const timeLine = document.querySelector(".timeline-line")
-  const circle = document.querySelector(".circle-check")
+
+  const buyBtn = document.getElementById("buy-btn");
+  const timeLine = document.querySelector(".timeline-line");
+  const circle = document.querySelector(".circle-check");
 
   selectAll.addEventListener("change", (e) => {
     freshQuanlityCost();
-    $("#buy-btn").removeAttr("disabled") 
+    const dataProduct = document.getElementById("footer-total-product");
+    const totalPro = dataProduct.getAttribute("data-total-product");
+    const dataCost = document.getElementById("footer-total-cost");
+    const totalCost = dataCost.getAttribute("data-total-cost");
+
+    const inforProduct = {
+      totalcost: totalCost,
+      totalpro: totalPro,
+    };
+    window.localStorage.setItem("inforProduct", JSON.stringify(inforProduct));
+
+    $("#buy-btn").removeAttr("disabled");
     buyBtn.addEventListener("click", () => {
-      circle.classList.add("circle-check-active")
-      timeLine.classList.add("timeline-line-half")
-      $(".content").load(`pages/cart/identify.html`)
-    })
+      circle.classList.add("circle-check-active");
+      timeLine.classList.add("timeline-line-half");
+      $(".content").load(`pages/cart/identify.html`);
+    });
   });
 
-   //checkbox choose all
-   
+  //checkbox choose all
 
   function freshQuanlityCost() {
     let selectAllQuanlity = 0;
     let selectAllCost = 0;
 
-    if(!selectAll.checked) {
+    if (!selectAll.checked) {
       count = 0;
       allCheckBox.forEach((i) => {
         i.checked = false;
@@ -234,37 +243,15 @@ $(document).ready(function () {
         selectAllQuanlity += parseInt(i.getAttribute("data-quanlity"));
         selectAllCost += parseInt(i.getAttribute("data-total-cost"));
       });
-    } 
+    }
 
-    const sumProduct = document.getElementById('footer-total-product')
-    const sumCost = document.getElementById('footer-total-cost')
+    const sumProduct = document.getElementById("footer-total-product");
+    const sumCost = document.getElementById("footer-total-cost");
 
-    sumProduct.innerHTML = selectAllQuanlity + " Products"
-    sumCost.innerHTML = formatNumber(selectAllCost)
+    sumProduct.setAttribute("data-total-product", selectAllQuanlity);
+    sumProduct.innerHTML = selectAllQuanlity + " Products";
 
-//check for item
-//     let checkBoxQuanlity = 0;
-//     let checkBoxCost = 0;
-// 
-//     if (item.checked) {
-//       item.checked = true;
-//       
-//       checkBoxQuanlity += parseInt(item.getAttribute("data-quanlity"))
-//       checkBoxCost += parseInt(item.getAttribute("data-total-cost"))
-//     } else if (!item.checked){
-//       item.checked = false;
-//     }
-//     
-//     sumProduct.innerHTML = checkBoxQuanlity + " Products"
-//     sumCost.innerHTML = formatNumber(checkBoxCost)
-  
-
-
-
-}
-// Buy now
-
-  
-
-
+    sumCost.setAttribute("data-total-cost", formatNumber(selectAllCost));
+    sumCost.innerHTML = formatNumber(selectAllCost);
+  }
 });
